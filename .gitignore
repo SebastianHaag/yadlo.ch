@@ -1,2 +1,3 @@
 *.DS_Store
+www.oym.co.esproj/*
 /node_modules/*
