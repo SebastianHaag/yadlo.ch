@@ -31,6 +31,14 @@ section#preLaunch{
 	}
 	#infos{
 		margin-top: 30vh;
+		h1{
+			opacity: 1;
+			    -webkit-animation: blink 1s infinite;
+			    -moz-animation: blink 1s infinite;
+			    -ms-animation: blink 1s infinite;
+			    -o-animation: blink 1s infinite;
+			    animation: blink 1s infinite;
+		}
 	}
 }
 
