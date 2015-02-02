@@ -30,14 +30,14 @@ section#preLaunch{
 		}
 	}
 	#infos{
-		margin-top: 30vh;
+		margin-top: 45vh;
 		h1{
 			opacity: 1;
-			    -webkit-animation: blink 1s infinite;
-			    -moz-animation: blink 1s infinite;
-			    -ms-animation: blink 1s infinite;
-			    -o-animation: blink 1s infinite;
-			    animation: blink 1s infinite;
+			-webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+			-moz-animation: fadein 3s; /* Firefox < 16 */
+			-ms-animation: fadein 3s; /* Internet Explorer */
+			-o-animation: fadein 3s; /* Opera < 12.1 */
+			animation: fadein 3s;
 		}
 	}
 }
@@ -45,7 +45,7 @@ section#preLaunch{
 @media #{$medium-up}{
 	section#preLaunch{
 		#infos{
-			margin-top: 25vh;
+			margin-top: 55vh;
 		}
 	}	
 }		

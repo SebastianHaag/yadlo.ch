@@ -11,17 +11,31 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'sn_neonoireregular';
+    src: url('../font/snneonoire-regular-webfont.eot');
+    src: url('../font/snneonoire-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/snneonoire-regular-webfont.woff2') format('woff2'),
+         url('../font/snneonoire-regular-webfont.woff') format('woff'),
+         url('../font/snneonoire-regular-webfont.ttf') format('truetype'),
+         url('../font/snneonoire-regular-webfont.svg#sn_neonoireregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /** TITLES **/
 h1, h2, h3, h4, h5, h6{
-	font-family:'les_sensations_de_ceriseIt', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-family:'sn_neonoireregular', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	&.transparent{
 		color: transparent;
-		font-size: rem-calc(64);
+		font-size: rem-calc(24);
 	}
 	&.typeElement{
 		color: $yellow;
-		font-size: 25vw;
+		-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.3)));
+		font-size: 8vw;
 		line-height: 1;
-		text-shadow: 4px 4px 8px $blue;
+		text-shadow: 5px 5px 10px $blue;
 	}
 }
