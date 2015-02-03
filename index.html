@@ -8,7 +8,7 @@
     <meta name="keyword" content="Windsurf, SUP, Stand up paddle, Wakesurf, Wakeboard, Barbeque, Burger, Sirop, Fête">
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApIoVl9RJxMaMwEIWK2E16ieLQEUzfHFM"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApIoVl9RJxMaMwEIWK2E16ieLQEUzfHFM&signed_in=true&v=3.exp"></script>
     <!--[if gte IE 9]>
       <style type="text/css">
         .gradient {
@@ -289,6 +289,12 @@
     	          "stylers": [
     	              {
     	                  "color": "#f4ec65"
+    	              },
+    	              {
+    	                  "gamma": "2"
+    	              },
+    	              {
+    	                  "weight": "1.00"
     	              }
     	          ]
     	      },
@@ -354,7 +360,7 @@
     	          "elementType": "all",
     	          "stylers": [
     	              {
-    	                  "visibility": "simplified"
+    	                  "visibility": "off"
     	              }
     	          ]
     	      },
@@ -449,7 +455,7 @@
     	  
     	
     	  var mapOptions = {
-    	    zoom: 16,
+    	    zoom: 15,
     	    center: surfshop,
     	    zoomControl: true,
     	    streetViewControl: false,
@@ -472,45 +478,10 @@
     	  var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
     	
     	  map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+    	  
     	}
     	
     	google.maps.event.addDomListener(window, 'load', initialize);
-    
-//          function initialize() {
-//          	var featureOpts = [
-//          	    {
-//          	      stylers: [
-//          	        { hue: '#890000' },
-//          	        { visibility: 'simplified' },
-//          	        { gamma: 0.5 },
-//          	        { weight: 0.5 }
-//          	      ]
-//          	    },
-//          	    {
-//          	      elementType: 'labels',
-//          	      stylers: [
-//          	        { visibility: 'off' }
-//          	      ]
-//          	    },
-//          	    {
-//          	      featureType: 'water',
-//          	      stylers: [
-//          	        { color: '#890000' }
-//          	      ]
-//          	    }
-//          	  ];
-//          	  
-//            var mapOptions = {
-//            	zoom: 15,
-//              	center: new google.maps.LatLng(46.5127103, 6.5280257),
-//              	disableDefaultUI: true,
-//              	scrollwheel: false,
-//              	zoomControl: false
-//            };
-//            var map = new google.maps.Map(document.getElementById('map'),
-//                mapOptions);
-//          }
-//          google.maps.event.addDomListener(window, 'load', initialize);
   	</script>
   </body>
 </html>
