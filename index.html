@@ -50,14 +50,14 @@
    <script src="js/jquery.easing.1.3.min.js"></script>
    <script>
    (function($) {
-      $("#yadloSticker").next().height($("#yadloSticker").height());
+      $("#yadloSticker, .scroll-button").next().height($("#yadloSticker, .scroll-button").height());
       $(window).scroll(function() {
          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
          if (scrollTop > 300) {
-            $('img#yadloSticker').css('opacity',0);
+            $('img#yadloSticker, div.scroll-button').css('opacity',0);
          }
          else {
-            $('img#yadloSticker').css('opacity',1-scrollTop/300);
+            $('img#yadloSticker, div.scroll-button').css('opacity',1-scrollTop/300);
          }
       }).scroll();
    }(jQuery));
