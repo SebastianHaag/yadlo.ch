@@ -41,7 +41,11 @@
          </div>
       </div>
    </section>
-   <div id="map" class="slide" data-slide="1"></div>
+   <div id="map-canvas" class="slide" data-slide="1"></div>
+   <div id="save-widget">
+      <h1>#Yadlo15</h1>
+      <p>Yadlo will take place at Surf Shop Préverenges, a unique place driven by passion</p>
+   </div>
 
    <script src="bower_components/jquery/dist/jquery.min.js"></script>
    <script src="bower_components/foundation/js/foundation.min.js"></script>
@@ -107,15 +111,35 @@
       $(window).scrollTop(0);
    });
    </script>
-   <script type="text/javascript">
+   <script>
    var map;
-   var surfshop = new google.maps.LatLng(46.5127103, 6.5280257);
-
-   var MY_MAPTYPE_ID = 'custom_style';
+   var saveWidget;
 
    function initialize() {
+      var myOptions = {
+         zoom: 15,
+         center: {lat: 46.513, lng: 6.5280257},
+         zoomControl: true,
+         mapTypeControl: false,
+         scrollwheel: false
+      };
+      map = new google.maps.Map(document.getElementById('map-canvas'),
+      myOptions);
 
-      var featureOpts = [
+      // Create a new SaveWidgetOptions object for Google SurfShop Préverenges
+      var saveWidgetOptions = {
+         place: {
+            // ChIJN1t_tDeuEmsRUsoyG83frY4 is the place Id for SurfShop Préverenges
+            placeId: 'ChIJbXr0ec0wjEcRgpkVm7ut-IM',
+            location: {lat: 46.5127103, lng: 6.5280257}
+         },
+         attribution: {
+            source: 'Yadlo - Mouille ton corp, arrose ton esprit',
+            webUrl: 'http://yadlo.ch:'
+         }
+      };
+
+      var styles = [
          {
             "featureType": "all",
             "elementType": "geometry.fill",
@@ -253,7 +277,7 @@
             "elementType": "geometry.fill",
             "stylers": [
                {
-                  "color": "#fffff"
+                  "color": "#e17fa8"
                }
             ]
          },
@@ -293,6 +317,9 @@
                },
                {
                   "lightness": 45
+               },
+               {
+                  "visibility": "simplified"
                }
             ]
          },
@@ -301,13 +328,13 @@
             "elementType": "geometry.fill",
             "stylers": [
                {
-                  "color": "#ffffff"
-               },
-               {
                   "gamma": "2"
                },
                {
                   "weight": "1.00"
+               },
+               {
+                  "color": "#ffffff"
                }
             ]
          },
@@ -325,7 +352,10 @@
             "elementType": "labels.text",
             "stylers": [
                {
-                  "visibility": "off"
+                  "visibility": "simplified"
+               },
+               {
+                  "color": "#efefef"
                }
             ]
          },
@@ -361,10 +391,43 @@
          },
          {
             "featureType": "road.arterial",
+            "elementType": "all",
+            "stylers": [
+               {
+                  "visibility": "simplified"
+               }
+            ]
+         },
+         {
+            "featureType": "road.arterial",
             "elementType": "labels.icon",
             "stylers": [
                {
                   "visibility": "off"
+               }
+            ]
+         },
+         {
+            "featureType": "road.local",
+            "elementType": "all",
+            "stylers": [
+               {
+                  "visibility": "simplified"
+               },
+               {
+                  "weight": "0.5"
+               }
+            ]
+         },
+         {
+            "featureType": "road.local",
+            "elementType": "labels.text",
+            "stylers": [
+               {
+                  "visibility": "simplified"
+               },
+               {
+                  "color": "#efefef"
                }
             ]
          },
@@ -466,42 +529,24 @@
          }
       ];
 
+      map.setOptions({styles: styles});
 
-      var mapOptions = {
-         zoom: 15,
-         center: surfshop,
-         zoomControl: true,
-         streetViewControl: false,
-         scrollwheel: false,
-         mapTypeControl: false,
-
-         mapTypeControlOptions: {
-            mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
-         },
-         mapTypeId: MY_MAPTYPE_ID
-      };
-
-      map = new google.maps.Map(document.getElementById('map'),
-      mapOptions);
-
-      var image = 'img/yadlo-sticker-mini.png';
-      var myLatLng = new google.maps.LatLng(46.511, 6.528);
-      var beachMarker = new google.maps.Marker({
-         position: myLatLng,
+      var image = 'img/pin-yadlo_white.png';
+      new google.maps.Marker({
          map: map,
-         icon: image
+         position: saveWidgetOptions.place.location,
+         icon: image,
       });
 
-      var styledMapOptions = {
-         name: 'Custom Style'
-      };
+      var widgetDiv = document.getElementById('save-widget');
+      map.controls[google.maps.ControlPosition.TOP_LEFT].push(widgetDiv);
 
-      var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
-
-      map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
-
+      // Append a Save Control to the existing save-widget div.
+      saveWidget = new google.maps.SaveWidget(widgetDiv, saveWidgetOptions);
    }
+
    google.maps.event.addDomListener(window, 'load', initialize);
+
    </script>
 </body>
 </html>
