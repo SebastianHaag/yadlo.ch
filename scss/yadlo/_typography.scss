@@ -21,7 +21,6 @@
          url('../font/snneonoire-regular-webfont.svg#sn_neonoireregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /** TITLES **/
@@ -36,10 +35,6 @@ h1, h2, h3, h4, h5, h6{
 		font-size: 7vw;
 		line-height: 1.4;
 		text-shadow: 5px 5px 10px $violet;
-      & span.excl{
-         font-size: 16vw;
-         padding-left: 1vw;
-      }
 	}
 }
 

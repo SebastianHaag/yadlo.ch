@@ -101,3 +101,11 @@ div#save-widget {
 		margin: 15px;
 	}
 }
+
+@media #{$xlarge-up}{
+	section#preLaunch{
+		#infos{
+			margin-top: 52vh;
+		}
+	}
+}
