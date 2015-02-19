@@ -11,8 +11,6 @@ section#preLaunch{
 	background: linear-gradient(to bottom,  #00afec 0%,#c2edfc 50%,#0085ec 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afec', endColorstr='#0085ec',GradientType=0 ); /* IE6-9 */
 
-
-
 	#sticker{
 		position: absolute;
 		width: 100%;
@@ -30,8 +28,9 @@ section#preLaunch{
 			animation: fadein 4s;
 		}
 	}
+
 	#infos{
-		margin-top: 40vh;
+		margin-top: 45vh;
 		h1{
 			opacity: 1;
 			-webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -41,52 +40,6 @@ section#preLaunch{
 			animation: fadein 3s;
 		}
 	}
-	.scroll-button-container {
-		left: 0;
-		bottom: -1px;
-		width:100%;
-		position: absolute;
-		display:block;
-		z-index: 1;
-		background: url(../img/degrade.png) repeat-x 0 100%;
-		padding-bottom: 25px;
-		.scroll-button {
-			margin: 0px auto;
-			background-image:url(../img/scroll-button@2x.png);
-			background-repeat: no-repeat;
-			background-position: bottom center;
-			height: 64px;
-			background-size: 64px 25px;
-			display: block;
-			padding-bottom: 100px;
-			cursor: pointer;
-			-webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-			-moz-animation: fadein 3s; /* Firefox < 16 */
-			-ms-animation: fadein 3s; /* Internet Explorer */
-			-o-animation: fadein 3s; /* Opera < 12.1 */
-			animation: fadein 3s;
-		}
-	}
-}
-div#map-canvas{
-	width: 100%;
-	height: 100%;
-	img{
-		max-width : none;
-	}
-}
-
-div#save-widget {
-	width: 100%;
-	background-color: rgba(255,255,255,0.8);
-	box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
-	padding: 15px;
-	h1{
-		font-size: 18px;
-	}
-	p{
-		font-size: 12px;
-	}
 }
 
 @media #{$medium-up}{
@@ -94,11 +47,6 @@ div#save-widget {
 		#infos{
 			margin-top: 48vh;
 		}
-	}
-	div#save-widget {
-		width: 300px;
-		background-color: rgba(255,255,255,1);
-		margin: 15px;
 	}
 }
 
