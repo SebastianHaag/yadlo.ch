@@ -32,10 +32,14 @@ h1, h2, h3, h4, h5, h6{
 		font-size: rem-calc(24);
 	}
 	&.typeElement{
-		color: $silver;
-		font-size: 8vw;
-		line-height: 1.2;
+		color: $yellow;
+		font-size: 7vw;
+		line-height: 1.4;
 		text-shadow: 5px 5px 10px $violet;
+      & span.excl{
+         font-size: 16vw;
+         padding-left: 1vw;
+      }
 	}
 }
 
