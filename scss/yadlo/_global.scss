@@ -56,7 +56,20 @@ section#preLaunch{
 		}
 		@media #{$landscape}{
 			#infos{
-				margin-top: 24vh;
+				margin-top: 44vh;
+			}
+		}
+	}
+}
+
+@media #{$large-up}{
+	section#preLaunch{
+		#infos{
+			margin-top: 48vh;
+		}
+		@media #{$landscape}{
+			#infos{
+				margin-top: 48vh;
 			}
 		}
 	}
