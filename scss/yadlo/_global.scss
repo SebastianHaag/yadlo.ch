@@ -1,17 +1,9 @@
-section#preLaunch{
+section#intro{
 	width: 100%;
 	height: 100%;
 	max-height: 100vh;
 	background: 40% 100% no-repeat;
 	background-size: cover;
-	// background: #00afec; /* Old browsers */
-	// background: -moz-linear-gradient(top,  #00afec 0%, #c2edfc 50%, #0085ec 100%); /* FF3.6+ */
-	// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00afec), color-stop(50%,#c2edfc), color-stop(100%,#0085ec)); /* Chrome,Safari4+ */
-	// background: -webkit-linear-gradient(top,  #00afec 0%,#c2edfc 50%,#0085ec 100%); /* Chrome10+,Safari5.1+ */
-	// background: -o-linear-gradient(top,  #00afec 0%,#c2edfc 50%,#0085ec 100%); /* Opera 11.10+ */
-	// background: -ms-linear-gradient(top,  #00afec 0%,#c2edfc 50%,#0085ec 100%); /* IE10+ */
-	// background: linear-gradient(to bottom,  #00afec 0%,#c2edfc 50%,#0085ec 100%); /* W3C */
-	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00afec', endColorstr='#0085ec',GradientType=0 ); /* IE6-9 */
 
 	#sticker{
 		position: absolute;
@@ -50,7 +42,7 @@ section#preLaunch{
 }
 
 @media #{$medium-up}{
-	section#preLaunch{
+	section#intro{
 		#infos{
 			margin-top: 48vh;
 		}
@@ -63,7 +55,7 @@ section#preLaunch{
 }
 
 @media #{$large-up}{
-	section#preLaunch{
+	section#intro{
 		#infos{
 			margin-top: 48vh;
 		}
@@ -76,7 +68,7 @@ section#preLaunch{
 }
 
 @media #{$xlarge-up}{
-	section#preLaunch{
+	section#intro{
 		#infos{
 			margin-top: 52vh;
 		}
