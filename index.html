@@ -8,31 +8,34 @@
    <meta name="keyword" content="Yadlo, Windsurf, SUP, Stand up paddle, Wakesurf, Wakeboard, Barbeque, Burger, Sirop, Fête">
    <link rel="stylesheet" href="css/app.css" />
    <script src="bower_components/modernizr/modernizr.js"></script>
-   <!-- Go to www.addthis.com/dashboard to customize your tools -->
-   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54e4c1f87cff4159" async="async"></script>
    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApIoVl9RJxMaMwEIWK2E16ieLQEUzfHFM&signed_in=true&v=3.exp"></script>
    <!--[if gte IE 9]>
-   <style type="text/css">
-   .gradient {
-   filter: none;
-}
-</style>
-<![endif]-->
+      <style type="text/css">
+         .gradient {
+            filter: none;
+         }
+      </style>
+   <![endif]-->
 </head>
 <body>
-   <section id="preLaunch">
+   <header>
       <div class="row">
          <div class="small-12 text-center columns">
-            <h1 class="transparent">YADLO</h1>
-            <h2 class="transparent">Yadlo - Mouille ton corp, arrose ton esprit</h2>
+            <h1 class="transparent">YADLO! Windsurf - Stand Up Paddle - Warkeboard - Warkesurf</h1>
+            <h2 class="transparent">Yadlo - Mouille ton corp, arrose ton esprit!</h2>
          </div>
       </div>
-      <div id="sticker">
+      <div id="logo">
          <img id="yadloSticker" alt="Yadlo" title="Yadlo" data-interchange="[img/yadlo-sticker.png, (default)], [img/yadlo-sticker@2x.png, (retina)]"/>
       </div>
+      <div id="sports" class="row">
+         <div class="small-12 small-text-center large-large-text-left columns">
+            <h1>Windsurf – Stand up paddle - Wake</h1>
+         </div>
+      </div>
       <div id="infos" class="row">
-         <div class="small-12 text-center columns">
-            <h1 class="typeElement"></h1>
+         <div class="small-12 small-text-center large-text-left columns">
+            <h3 class="typeElement"></h3>
          </div>
       </div>
       <div class="scroll-button-container">
@@ -42,12 +45,32 @@
             </div>
          </div>
       </div>
+   </header>
+   <section id="programme" class="slide" data-slide="1">
+      <div class="row fullWidth">
+         <div id="jeudi" class="small-12 medium-5 columns halfHeight">
+         </div>
+         <div id="vendredi" class="small-12 medium-7 columns halfHeight">
+         </div>
+      </div>
+      <div class="row fullWidth">
+         <div id="samedi" class="small-12 medium-7 columns halfHeight">
+         </div>
+         <div id="dimanche" class="small-12 medium-5 columns halfHeight">
+         </div>
+      </div>
    </section>
-   <div id="map-canvas" class="slide" data-slide="1"></div>
-   <div id="save-widget">
-      <h1>#Yadlo15</h1>
-      <p>Yadlo will take place at Surf Shop Préverenges, a unique place driven by passion</p>
-   </div>
+   <section id="pratique">
+      <div id="map-canvas"></div>
+      <div id="save-widget">
+         <h1>Pratique</h1>
+         <p>Yadlo will take place at Surf Shop Préverenges, a unique place driven by passion</p>
+      </div>
+   </section>
+   <section id="sponsors">
+   </section>
+   <footer>
+   </footer>
 
    <script src="bower_components/jquery/dist/jquery.min.js"></script>
    <script src="bower_components/foundation/js/foundation.min.js"></script>
@@ -71,12 +94,10 @@
    <script>
    $(function(){
       $(".typeElement").typed({
-         strings: ["Save the date", "9 - 12 July 15"],
-         typeSpeed: 50,
-         startDelay: 0,
-         backSpeed: 0,
-         backDelay: 1500,
-         loop: true,
+         strings: ["Chefs aux fournaux<br>Djs a la sono<br>Initiations sur l'eau"],
+         typeSpeed: 150,
+         startDelay: 50,
+         loop: false,
          showCursor: false
       });
    });
@@ -533,7 +554,7 @@
 
       map.setOptions({styles: styles});
 
-      var image = 'img/pin-yadlo_white.png';
+      var image = 'img/pin-yadlo.svg';
       new google.maps.Marker({
          map: map,
          position: saveWidgetOptions.place.location,

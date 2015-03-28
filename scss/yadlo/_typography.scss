@@ -29,13 +29,12 @@ h1, h2, h3, h4, h5, h6{
 	font-family:'sn_neonoireregular', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	&.transparent{
 		color: transparent;
-		font-size: rem-calc(24);
+		font-size: rem-calc(0);
+      display: none;
 	}
 	&.typeElement{
 		color: $silver;
-		font-size: 8vw;
-		line-height: 1.2;
-		text-shadow: 5px 5px 10px $violet;
+		text-shadow: 5px 5px 10px $violet-dark;
 	}
 }
 
