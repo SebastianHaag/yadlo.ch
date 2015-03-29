@@ -47,16 +47,88 @@
       </div>
    </header>
    <section id="programme" class="slide" data-slide="1">
-      <div class="row fullWidth">
-         <div id="jeudi" class="small-12 medium-5 columns halfHeight">
+      <div class="row collapse fullWidth">
+         <div id="jeudi" class="small-12 large-6 columns halfHeight">
+            <figure class="effect-julia show-for-large-up">
+					<img src="img/test1.png" alt="test img"/>
+					<figcaption>
+						<h2>Jeudi</h2>
+						<div>
+							<p class="fromLeft">Julia dances in the deep dark</p><br>
+							<p class="fromLeft">She loves the smell of the ocean</p><br>
+							<p class="fromLeft">And dives into the morning light</p><br>
+						</div>
+						<a href="#" data-reveal-id="jeudiFull">View more</a>
+					</figcaption>
+				</figure>
          </div>
-         <div id="vendredi" class="small-12 medium-7 columns halfHeight">
+         <div id="jeudiFull" class="reveal-modal full" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
+           <h2 id="firstModalTitle">This is a modal.</h2>
+           <p>Reveal makes these very easy to summon and dismiss. The close button is simply an anchor with a unicode character icon and a class of <code>close-reveal-modal</code>. Clicking anywhere outside the modal will also dismiss it.</p>
+           <p>Finally, if your modal summons another Reveal modal, the plugin will handle that for you gracefully.</p>
+           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+         </div>
+         <div id="vendredi" class="small-12 large-6 columns halfHeight">
+            <figure class="effect-julia show-for-large-up">
+					<img src="img/test2.png" alt="test img"/>
+					<figcaption>
+						<h2>Vendredi</h2>
+						<div>
+							<p class="fromRight">Julia dances in the deep dark</p><br>
+							<p class="fromRight">She loves the smell of the ocean</p><br>
+							<p class="fromRight">And dives into the morning light</p><br>
+						</div>
+						<a href="#" data-reveal-id="vendrediFull">View more</a>
+					</figcaption>
+				</figure>
+         </div>
+         <div id="vendrediFull" class="reveal-modal full" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
+           <h2 id="firstModalTitle">This is a modal.</h2>
+           <p>Reveal makes these very easy to summon and dismiss. The close button is simply an anchor with a unicode character icon and a class of <code>close-reveal-modal</code>. Clicking anywhere outside the modal will also dismiss it.</p>
+           <p>Finally, if your modal summons another Reveal modal, the plugin will handle that for you gracefully.</p>
+           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
          </div>
       </div>
-      <div class="row fullWidth">
-         <div id="samedi" class="small-12 medium-7 columns halfHeight">
+      <div class="row collapse fullWidth">
+         <div id="samedi" class="small-12 large-6 columns halfHeight">
+            <figure class="effect-julia show-for-large-up">
+					<img src="img/test3.png" alt="test img"/>
+					<figcaption>
+						<h2>Samedi</h2>
+						<div>
+							<p class="fromLeft">Julia dances in the deep dark</p><br>
+							<p class="fromLeft">She loves the smell of the ocean</p><br>
+							<p class="fromLeft">And dives into the morning light</p><br>
+						</div>
+						<a href="#" data-reveal-id="samediFull">View more</a>
+					</figcaption>
+				</figure>
          </div>
-         <div id="dimanche" class="small-12 medium-5 columns halfHeight">
+         <div id="samediFull" class="reveal-modal full" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
+           <h2 id="firstModalTitle">This is a modal.</h2>
+           <p>Reveal makes these very easy to summon and dismiss. The close button is simply an anchor with a unicode character icon and a class of <code>close-reveal-modal</code>. Clicking anywhere outside the modal will also dismiss it.</p>
+           <p>Finally, if your modal summons another Reveal modal, the plugin will handle that for you gracefully.</p>
+           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+         </div>
+         <div id="dimanche" class="small-12 large-6 columns halfHeight">
+            <figure class="effect-julia show-for-large-up">
+					<img src="img/test4.png" alt="test img"/>
+					<figcaption>
+						<h2>Dimanche</h2>
+						<div>
+							<p class="fromRight">Julia dances in the deep dark</p><br>
+							<p class="fromRight">She loves the smell of the ocean</p><br>
+							<p class="fromRight">And dives into the morning light</p><br>
+						</div>
+						<a href="#" data-reveal-id="dimancheFull">View more</a>
+					</figcaption>
+				</figure>
+         </div>
+         <div id="dimancheFull" class="reveal-modal full" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
+           <h2 id="firstModalTitle">This is a modal.</h2>
+           <p>Reveal makes these very easy to summon and dismiss. The close button is simply an anchor with a unicode character icon and a class of <code>close-reveal-modal</code>. Clicking anywhere outside the modal will also dismiss it.</p>
+           <p>Finally, if your modal summons another Reveal modal, the plugin will handle that for you gracefully.</p>
+           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
          </div>
       </div>
    </section>
@@ -95,8 +167,8 @@
    $(function(){
       $(".typeElement").typed({
          strings: ["Chefs aux fournaux<br>Djs a la sono<br>Initiations sur l'eau"],
-         typeSpeed: 150,
-         startDelay: 50,
+         typeSpeed: 100,
+         startDelay: 0,
          loop: false,
          showCursor: false
       });
