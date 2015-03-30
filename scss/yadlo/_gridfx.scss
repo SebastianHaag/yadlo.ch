@@ -124,15 +124,15 @@ figure.effect-julia p {
 	text-transform: none;
 	font-weight: 500;
 	font-size: 75%;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
 	&.fromLeft{
-		-webkit-transform: translate3d(-500px,0px,0);
-		transform: translate3d(-500px,0px,0);
+		-webkit-transform: translate3d(-1000px,0px,0);
+		transform: translate3d(-1000px,0px,0);
 	}
 	&.fromRight{
-		-webkit-transform: translate3d(500px,0px,0);
-		transform: translate3d(500px,0px,0);
+		-webkit-transform: translate3d(1000px,0px,0);
+		transform: translate3d(1000px,0px,0);
 	}
 
 }

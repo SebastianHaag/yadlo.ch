@@ -1,0 +1,35 @@
+body.modal-open {
+    overflow: hidden;
+}
+.reveal-modal-bg {
+	background: transparent;
+}
+
+.reveal-modal{
+	box-shadow: none;
+   border: none;
+   border-radius: none;
+   -webkit-border-radius: none;
+   -moz-border-radius: none;
+   -o-border-radius: none;
+   -ms-border-radius: none;
+   .scrollable-content{
+		overflow-y: scroll;
+		height: 100%;
+		padding: 60px 0;
+	}
+
+	a.close-reveal-modal {
+      color: $yellow;
+		top: 1.3rem;
+		right: 1.7rem;
+		font-size: 3rem;
+	}
+	p{
+		margin-top: 15px;
+	}
+}
+
+
+@media #{$large-up}{
+}

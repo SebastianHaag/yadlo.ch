@@ -27,21 +27,7 @@
 /** TITLES **/
 h1, h2, h3, h4, h5, h6{
 	font-family:'sn_neonoireregular', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-	&.transparent{
-		color: transparent;
-		font-size: rem-calc(0);
-      display: none;
-	}
-	&.typeElement{
-		color: $silver;
-		text-shadow: 5px 5px 10px $violet-dark;
-	}
-}
-
-@media #{$xlarge-up}{
-   h1, h2, h3, h4, h5, h6{
-      &.typeElement{
-         font-size: 7rem;
-      }
-   }
+	color: $white;
+	text-shadow: 5px 5px 10px $violet-dark;
+   line-height: 1.8;
 }

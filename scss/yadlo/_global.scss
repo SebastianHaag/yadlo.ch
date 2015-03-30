@@ -5,7 +5,16 @@
 }
 
 .halfHeight{
-	height: 50vw;
+	height: 50%;
+}
+
+.square{
+	height: 100vw;
+}
+@media #{$large-up}{
+	.square{
+		height: 50vw;
+	}
 }
 
 /** PAGE LAYOUT **/
@@ -24,42 +33,53 @@ header{
 	background: linear-gradient(to bottom,  #52c1bc 0%,#a5d7bf 50%,#ffffff 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52c1bc', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
 
-	#logo{
-		position: absolute;
-		width: 100%;
-		top: 0;
-		left: 0;
-		text-align: center;
-		img{
-			width: 400px;
-			width: 40vh;
-			padding: 15px;
-			display: inline-block;
-			-webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-			-moz-animation: fadein 4s; /* Firefox < 16 */
-			-ms-animation: fadein 4s; /* Internet Explorer */
-			-o-animation: fadein 4s; /* Opera < 12.1 */
-			animation: fadein 4s;
+	.halfHeight{
+		#logo{
+			position: absolute;
+			width: 100%;
+			top: 0;
+			left: 0;
+			text-align: center;
+			img{
+				width: 400px;
+				width: 40vh;
+				padding: 15px;
+				display: inline-block;
+				-webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+				-moz-animation: fadein 4s; /* Firefox < 16 */
+				-ms-animation: fadein 4s; /* Internet Explorer */
+				-o-animation: fadein 4s; /* Opera < 12.1 */
+				animation: fadein 4s;
+			}
+		}
+		#sports{
+			padding-top: 40vh;
+			-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+			-moz-animation: fadein 6s; /* Firefox < 16 */
+			-ms-animation: fadein 6s; /* Internet Explorer */
+			-o-animation: fadein 6s; /* Opera < 12.1 */
+			animation: fadein 6s;
 		}
 	}
-	#sports{
-		margin-top: 50vh;
-		-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-		-moz-animation: fadein 6s; /* Firefox < 16 */
-		-ms-animation: fadein 6s; /* Internet Explorer */
-		-o-animation: fadein 6s; /* Opera < 12.1 */
-		animation: fadein 6s;
-	}
-	#infos{
-		margin-top: 10vh;
-		h3{
+	.halfHeight{
+		#waterImg{
+			height: 100%;
+			width: 100%;
+			background: 50% 100% no-repeat;
+			background-image: url("../img/water.png");
 			opacity: 1;
-			line-height: 1.8;
-			-webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-			-moz-animation: fadein 3s; /* Firefox < 16 */
-			-ms-animation: fadein 3s; /* Internet Explorer */
-			-o-animation: fadein 3s; /* Opera < 12.1 */
-			animation: fadein 3s;
+			background-size: cover;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			#infos{
+				padding-top: 3vh;
+				-webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+				-moz-animation: fadein 6s; /* Firefox < 16 */
+				-ms-animation: fadein 6s; /* Internet Explorer */
+				-o-animation: fadein 6s; /* Opera < 12.1 */
+				animation: fadein 6s;
+			}
 		}
 	}
 	.scroll-button-container {
@@ -69,7 +89,6 @@ header{
 		position: absolute;
 		display:block;
 		z-index: 1;
-		background: url(../img/degrade.png) repeat-x 0 100%;
 		padding-bottom: 25px;
 		.scroll-button {
 			margin: 0px auto;
@@ -93,30 +112,25 @@ header{
 section{
 	width: 100%;
 	height: 100%;
+	display: block;
 
 	&#programme{
 	height: auto;
 		#jeudi{
-			background-color: $violet-pop;
-			&:hover{
-			}
+			background: url("../img/test1.png");
 		}
 		#vendredi{
-			background-color: $blue-pop;
-			&:hover{
-			}
+			background: url("../img/test2.png");
 		}
 		#samedi{
-			background-color: $yellow;
-			&:hover{
-			}
+			background: url("../img/test3.png");
 		}
 		#dimanche{
-			background-color: $violet-dark;
-			&:hover{
-			}
+			background: url("../img/test4.png");
 		}
-
+	}
+	&#sponsors{
+		background: $yellow;
 	}
 
 	#map-canvas{
@@ -149,11 +163,6 @@ footer{
 }
 
 @media #{$medium-up}{
-	section#preLaunch{
-		#infos{
-			margin-top: 55vh;
-		}
-	}
 	div#save-widget {
 		width: 300px;
 		background-color: rgba(255,255,255,1);

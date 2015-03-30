@@ -1,0 +1,65 @@
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea, {
+	box-shadow: none;
+	border: none;
+	font-size: 18px;
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"]{
+	border-bottom: solid 2px $jumbo;
+	background: none;
+	padding: 0;
+	margin: 20px 0 0 0;
+	&:hover, &:focus, &:active{
+		border-bottom: solid 2px $yellow;
+		background: none;
+	}
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]::-moz-inner-spin-button,
+input[type=number]::-moz-outer-spin-button {
+  -moz-appearance: none;
+  margin: 0;
+}
+input[type=number]::-o-inner-spin-button,
+input[type=number]::-o-outer-spin-button {
+  -o-appearance: none;
+  margin: 0;
+}
+input[type=number]::-ms-inner-spin-button,
+input[type=number]::-ms-outer-spin-button {
+  -ms-appearance: none;
+  margin: 0;
+}
+select{
+	min-height: 45px;
+	box-shadow: none;
+	border: solid 2px $jumbo;
+	font-size: 18px;
+	font-weight: normal;
+	color: $jumbo;
+	margin: 12px 0 0 0;
+	&:hover, &:focus, &:active{
+		border: solid 2px $yellow;
+		background: none;
+		outline: none;
+	}
+
+}
+textarea{
+	min-height: 150px;
+	border: solid 2px $jumbo;
+	margin: 40px 0 30px 0;
+   background: none;
+	&:hover, &:focus, &:active{
+		border: solid 2px $yellow;
+		background: none;
+	}
+}
+
+[data-abide] .error small.error, [data-abide] .error span.error, [data-abide] span.error, [data-abide] small.error, .error small.error, span.error, small.error{
+	background-color: $yellow;
+	text-align: left;
+}
