@@ -30,4 +30,27 @@ h1, h2, h3, h4, h5, h6{
 	color: $white;
 	text-shadow: 5px 5px 10px $violet-dark;
    line-height: 1.8;
+   font-size: 6vw;
+   small{
+      color: $white;
+   }
+}
+
+@media #{$large-up}{
+   h1{
+      font-size: 3.5vw;
+   }
+   h2{
+      font-size: 3vw;
+   }
+   h3{
+      font-size: 2vw;
+   }
+
+   h4, h5{
+      font-size: initial;
+   }
+   h6{
+      font-size: 3.5vw;
+   }
 }
