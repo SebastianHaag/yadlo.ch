@@ -108,7 +108,7 @@ figure.effect-julia h2 {
 	color: $white;
 	text-align: center;
 	position: relative;
-	padding: 0.5em 0;
+	padding: 1.5em 0;
 	margin-bottom: 20px;
 }
 figure.effect-julia div {
@@ -117,15 +117,16 @@ figure.effect-julia div {
 
 figure.effect-julia p {
 	display: inline-block;
-	margin: 0 0 0.25em;
-	padding: 0.4em 1em;
-	background: rgba(255,255,255,0.9);
-	color: #2f3238;
+	margin: 0 0 0.4em;
+	padding: 0.2em 0.8em;
+	background: rgba(255,255,255,0.8);
+	color: $oil;
 	text-transform: none;
 	font-weight: 500;
-	font-size: 75%;
+	font-size: 1.5vw;
 	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
 	transition: opacity 0.5s, transform 0.5s;
+	text-transform: uppercase;
 	&.fromLeft{
 		-webkit-transform: translate3d(-1000px,0px,0);
 		transform: translate3d(-1000px,0px,0);
