@@ -144,15 +144,15 @@ figure.effect-julia p {
 
 	}
 	figure.effect-julia p {
-		-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-		transition: opacity 0.5s, transform 0.5s;
+		-webkit-transition: opacity 1s, -webkit-transform 0.5s;
+		transition: opacity 1s, transform 0.5s;
 		&.fromLeft{
-			-webkit-transform: translate3d(-1000px,0px,0);
-			transform: translate3d(-1000px,0px,0);
+			-webkit-transform: translate3d(-1500px,0px,0);
+			transform: translate3d(-1500px,0px,0);
 		}
 		&.fromRight{
-			-webkit-transform: translate3d(1000px,0px,0);
-			transform: translate3d(1000px,0px,0);
+			-webkit-transform: translate3d(1500px,0px,0);
+			transform: translate3d(1500px,0px,0);
 		}
 
 	}

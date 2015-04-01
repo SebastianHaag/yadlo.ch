@@ -2,11 +2,9 @@
 	display: inline-block;
 	overflow: hidden;
 	padding: 0.8rem 2rem;
-   max-width: 200px;
-	max-height: 50px;
-   color: $yellow;
+   color: $blue-pop;
    background-color: $white;
-   border: solid 3px $yellow;
+   border: solid 3px $blue-pop;
    transition: all 300ms ease-out;
 	-webkit-transition: all 300ms ease-out;
 	-moz-transition: all 300ms ease-out;
@@ -14,7 +12,7 @@
 	-ms-transition: all 300ms ease-out;
 
    &:hover, &:active, &:focus{
-      background: $yellow;
+      background: $blue-pop;
 		color: $white
    }
 
@@ -26,16 +24,16 @@
 
       &:hover, &:active, &:focus{
 			background: $white;
-			color: $yellow;
+			color: $blue-pop;
 		}
 	}
 	&.transparent-bg{
-		color: $yellow;
+		color: $blue-pop;
 		background-color: transparent;
-		border: solid 3px $yellow;
+		border: solid 3px $blue-pop;
 
       &:hover, &:active, &:focus{
-			background: $yellow;
+			background: $blue-pop;
 			color: $white;
 		}
 	}

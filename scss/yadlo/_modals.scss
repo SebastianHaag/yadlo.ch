@@ -1,5 +1,8 @@
-body.modal-open {
-    overflow: hidden;
+html.modal-open {
+   overflow: hidden;
+   body{
+      overflow: hidden;
+   }
 }
 .reveal-modal-bg {
 	background: transparent;
@@ -21,13 +24,14 @@ body.modal-open {
 }
 .reveal-modal{
    z-index: 99999;
+   top: 0 !important;
 	box-shadow: none;
    border: none;
-   border-radius: none;
-   -webkit-border-radius: none;
-   -moz-border-radius: none;
-   -o-border-radius: none;
-   -ms-border-radius: none;
+   border-radius: 0px;
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   -o-border-radius: 0px;
+   -ms-border-radius: 0px;
    height: 100%;
    width: 100%;
    background: 50% 50% no-repeat;
