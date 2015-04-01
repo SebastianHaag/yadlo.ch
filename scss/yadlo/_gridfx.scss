@@ -67,7 +67,7 @@ figure figcaption > a {
 	text-indent: 200%;
 	white-space: nowrap;
 	font-size: 0;
-	opacity: 0;
+	opacity: 1;
 }
 
 
@@ -108,8 +108,7 @@ figure.effect-julia h6 {
 	color: $white;
 	text-align: center;
 	position: relative;
-	padding: 1.5em 0;
-	margin-bottom: 20px;
+	padding: 1.5em 0 1em 0;
 }
 figure.effect-julia div {
 	text-align: center;
@@ -123,59 +122,81 @@ figure.effect-julia p {
 	color: $oil;
 	text-transform: none;
 	font-weight: 500;
-	font-size: 1.5vw;
-	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-	transition: opacity 0.5s, transform 0.5s;
+	font-size: 3.5vw;
 	text-transform: uppercase;
-	&.fromLeft{
-		-webkit-transform: translate3d(-1000px,0px,0);
-		transform: translate3d(-1000px,0px,0);
+}
+@media #{$medium-up}{
+	figure.effect-julia p {
+		font-size: 1.5vw;
 	}
-	&.fromRight{
-		-webkit-transform: translate3d(1000px,0px,0);
-		transform: translate3d(1000px,0px,0);
+}
+@media #{$large-up}{
+	figure figcaption > a {
+		z-index: 1000;
+		text-indent: 200%;
+		white-space: nowrap;
+		font-size: 0;
+		opacity: 0;
+	}
+	figure.effect-julia h6 {
+		color: $white;
+		padding: 1.5em 0;
+		margin-bottom: 20px;
+
+	}
+	figure.effect-julia p {
+		-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+		transition: opacity 0.5s, transform 0.5s;
+		&.fromLeft{
+			-webkit-transform: translate3d(-1000px,0px,0);
+			transform: translate3d(-1000px,0px,0);
+		}
+		&.fromRight{
+			-webkit-transform: translate3d(1000px,0px,0);
+			transform: translate3d(1000px,0px,0);
+		}
+
 	}
 
-}
+	figure.effect-julia p:first-child {
+		-webkit-transition-delay: 0.15s;
+		transition-delay: 0.15s;
+	}
 
-figure.effect-julia p:first-child {
-	-webkit-transition-delay: 0.15s;
-	transition-delay: 0.15s;
-}
+	figure.effect-julia p:nth-of-type(2) {
+		-webkit-transition-delay: 0.1s;
+		transition-delay: 0.1s;
+	}
 
-figure.effect-julia p:nth-of-type(2) {
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
-}
+	figure.effect-julia p:nth-of-type(3) {
+		-webkit-transition-delay: 0.05s;
+		transition-delay: 0.05s;
+	}
 
-figure.effect-julia p:nth-of-type(3) {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
-}
+	figure.effect-julia:hover p:first-child {
+		-webkit-transition-delay: 0s;
+		transition-delay: 0s;
+	}
 
-figure.effect-julia:hover p:first-child {
-	-webkit-transition-delay: 0s;
-	transition-delay: 0s;
-}
+	figure.effect-julia:hover p:nth-of-type(2) {
+		-webkit-transition-delay: 0.05s;
+		transition-delay: 0.05s;
+	}
 
-figure.effect-julia:hover p:nth-of-type(2) {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
-}
+	figure.effect-julia:hover p:nth-of-type(3) {
+		-webkit-transition-delay: 0.1s;
+		transition-delay: 0.1s;
+	}
 
-figure.effect-julia:hover p:nth-of-type(3) {
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
-}
+	figure.effect-julia:hover img {
+		opacity: 0.6;
+		-webkit-transform: scale3d(1.1,1.1,1);
+		transform: scale3d(1.1,1.1,1);
+	}
 
-figure.effect-julia:hover img {
-	opacity: 0.6;
-	-webkit-transform: scale3d(1.1,1.1,1);
-	transform: scale3d(1.1,1.1,1);
-}
-
-figure.effect-julia:hover p {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	figure.effect-julia:hover p {
+		opacity: 1;
+		-webkit-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
 }

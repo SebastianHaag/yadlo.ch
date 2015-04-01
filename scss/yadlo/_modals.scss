@@ -5,7 +5,22 @@ body.modal-open {
 	background: transparent;
 }
 
+#jeudiFull.reveal-modal.full.open{
+   background-image: url("../img/jeudiBgH.png");
+}
+#vendrediFull.reveal-modal.full.open{
+   background-image: url("../img/vendrediBgH.png");
+
+}
+#samediFull.reveal-modal.full.open{
+   background-image: url("../img/samediBgH.png");
+
+}
+#dimancheFull.reveal-modal.full.open{
+   background-image: url("../img/dimancheBgH.png");
+}
 .reveal-modal{
+   z-index: 99999;
 	box-shadow: none;
    border: none;
    border-radius: none;
@@ -13,6 +28,14 @@ body.modal-open {
    -moz-border-radius: none;
    -o-border-radius: none;
    -ms-border-radius: none;
+   height: 100%;
+   width: 100%;
+   background: 50% 50% no-repeat;
+   opacity: 1;
+   background-size: cover;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
    .scrollable-content{
 		overflow-y: scroll;
 		height: 100%;
@@ -20,7 +43,7 @@ body.modal-open {
 	}
 
 	a.close-reveal-modal {
-      color: $yellow;
+      color: $white;
 		top: 1.3rem;
 		right: 1.7rem;
 		font-size: 3rem;
@@ -31,5 +54,19 @@ body.modal-open {
 }
 
 
-@media #{$large-up}{
+@media #{$portrait}{
+   #jeudiFull.reveal-modal.full.open{
+      background-image: url("../img/jeudiBgP.png");
+   }
+   #vendrediFull.reveal-modal.full.open{
+      background-image: url("../img/vendrediBgP.png");
+
+   }
+   #samediFull.reveal-modal.full.open{
+      background-image: url("../img/samediBgP.png");
+
+   }
+   #dimancheFull.reveal-modal.full.open{
+      background-image: url("../img/dimancheBgP.png");
+   }
 }

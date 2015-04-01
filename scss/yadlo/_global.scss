@@ -21,7 +21,7 @@
 		&.smallBtm{
 			height: 100%;
 			#waterImg{
-				background-image: url("../img/fff.png");
+				background-image: url("../img/headerBgP@2x.png");
 			}
 		}
 	}
@@ -30,7 +30,7 @@
 .square{
 	height: 100vw;
 }
-@media #{$large-up}{
+@media #{$medium-up}{
 	.square{
 		height: 50vw;
 	}
@@ -59,6 +59,7 @@ header{
 			top: 0;
 			left: 0;
 			text-align: center;
+			z-index: 999;
 			img{
 				width: 400px;
 				width: 40vh;
@@ -78,14 +79,15 @@ header{
 			-ms-animation: fadein 2s; /* Internet Explorer */
 			-o-animation: fadein 2s; /* Opera < 12.1 */
 			animation: fadein 2s;
+			>div{
+				z-index: 9999;
+			}
 		}
-	}
-	.splitHeight{
 		#waterImg{
 			height: 100%;
 			width: 100%;
 			background: 50% 100% no-repeat;
-			background-image: url("../img/water.png");
+			background-image: url("../img/headerBgH.png");
 			opacity: 1;
 			background-size: cover;
 			-webkit-background-size: cover;
@@ -103,7 +105,7 @@ header{
 		padding-bottom: 25px;
 		.scroll-button {
 			margin: 0px auto;
-			background-image:url(../img/scroll-button@2x.png);
+			background-image:url(../img/scrollButton@2x.png);
 			background-repeat: no-repeat;
 			background-position: bottom center;
 			height: 64px;
@@ -127,21 +129,11 @@ section{
 
 	&#programme{
 	height: auto;
-		#jeudi{
-			background: url("../img/test1.png");
-		}
-		#vendredi{
-			background: url("../img/test2.png");
-		}
-		#samedi{
-			background: url("../img/test3.png");
-		}
-		#dimanche{
-			background: url("../img/test4.png");
-		}
 	}
 	&#sponsors{
 		background: $yellow;
+		text-align: center;
+		padding: 60px 45px
 	}
 
 	#map-canvas{
@@ -154,11 +146,12 @@ section{
 
 	#save-widget {
 		width: 100%;
+		height: auto;
 		background-color: rgba(255,255,255,0.8);
 		box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
 		padding: 15px;
 		h6{
-			color: $pink;
+			color: $white;
 		}
 	}
 
@@ -172,10 +165,7 @@ footer{
 
 @media #{$medium-up}{
 	div#save-widget {
-		width: 40vw;
-		height: 100vh;
-		background-color: rgba(255,255,255,0.8);
-		padding: 55px 45px;
+		padding: 60px 45px;
 	}
 }
 
@@ -188,5 +178,9 @@ footer{
 				}
 			}
 		}
+	}
+	div#save-widget {
+		width: 50%;
+		padding: 60px 45px;
 	}
 }
