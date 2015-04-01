@@ -153,6 +153,9 @@ section{
 		h6{
 			color: $white;
 		}
+		iframe.gm-save-widget{
+			display: none;
+		}
 	}
 
 }
@@ -165,7 +168,9 @@ footer{
 
 @media #{$medium-up}{
 	div#save-widget {
-		padding: 60px 45px;
+		padding: 60px 45px 45px 45px;
+		width: 50%;
+		height: 100%;
 	}
 }
 
@@ -178,5 +183,8 @@ footer{
 				}
 			}
 		}
+	}
+	section#pratique{
+		background-attachment: fixed;
 	}
 }

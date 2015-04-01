@@ -4,17 +4,14 @@ var adaptZoom;
 var saveWidget;
 
 function initialize() {
-   mapCenter={lat: 46.5127103, lng: 6.5280257}
+   mapCenter={lat: 46.522, lng: 6.48}
    if ( $(window).width() <= 1024) {
       mapCenter={lat: 46.512, lng: 6.5280257}
    }
    var myOptions = {
-      zoom: 14,
+      zoom: 12,
       center: mapCenter,
       zoomControl: true,
-      zoomControlOptions: {
-        position: google.maps.ControlPosition.TOP_LEFT
-      },
       mapTypeControl: false,
       streetViewControl: false,
       scrollwheel: false

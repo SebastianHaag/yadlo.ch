@@ -1,7 +1,7 @@
 $(document).ready(function() {
    $(document).foundation({
       reveal: {
-         animation: 'fade',
+         animation: 'fadeAndPop',
       }
    });
    $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
