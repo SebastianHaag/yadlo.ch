@@ -1,8 +1,5 @@
 html.modal-open {
    overflow: hidden;
-   body{
-      overflow: hidden;
-   }
 }
 .reveal-modal-bg {
 	background: transparent;
@@ -24,7 +21,9 @@ html.modal-open {
 }
 .reveal-modal{
    z-index: 99999;
+   position: fixed;
    top: 0 !important;
+   left: 0 !important;
 	box-shadow: none;
    border: none;
    border-radius: 0px;

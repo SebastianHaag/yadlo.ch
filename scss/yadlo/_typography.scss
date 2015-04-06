@@ -1,19 +1,20 @@
 /** CUSTOM FONT - FILES ROOT/FONT **/
 @font-face {
-    font-family: 'sn_neonoireregular';
-    src: url('../font/snneonoire-regular-webfont.eot');
-    src: url('../font/snneonoire-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/snneonoire-regular-webfont.woff2') format('woff2'),
-         url('../font/snneonoire-regular-webfont.woff') format('woff'),
-         url('../font/snneonoire-regular-webfont.ttf') format('truetype'),
-         url('../font/snneonoire-regular-webfont.svg#sn_neonoireregular') format('svg');
+    font-family: 'arkhipregular';
+    src: url('../font/Arkhip_font-webfont.eot');
+    src: url('../font/Arkhip_font-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Arkhip_font-webfont.woff2') format('woff2'),
+         url('../font/Arkhip_font-webfont.woff') format('woff'),
+         url('../font/Arkhip_font-webfont.ttf') format('truetype'),
+         url('../font/Arkhip_font-webfont.svg#arkhipregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
 /** TITLES **/
 h1, h2, h3, h4, h5, h6{
-	font-family:'sn_neonoireregular', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-family:'arkhipregular', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	color: $white;
 	text-shadow: 5px 5px 10px $violet-dark;
    line-height: 1.8;

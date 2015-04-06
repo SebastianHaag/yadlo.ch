@@ -2,17 +2,18 @@
 	display: inline-block;
 	overflow: hidden;
 	padding: 0.8rem 2rem;
-   color: $blue-pop;
+   color: $violet-dark;
    background-color: $white;
-   border: solid 3px $blue-pop;
+   border: solid 3px $violet-dark;
    transition: all 300ms ease-out;
 	-webkit-transition: all 300ms ease-out;
 	-moz-transition: all 300ms ease-out;
 	-o-transition: all 300ms ease-out;
 	-ms-transition: all 300ms ease-out;
+	margin-bottom: 30px;
 
    &:hover, &:active, &:focus{
-      background: $blue-pop;
+      background: $violet-dark;
 		color: $white
    }
 
@@ -24,16 +25,16 @@
 
       &:hover, &:active, &:focus{
 			background: $white;
-			color: $blue-pop;
+			color: $violet-dark;
 		}
 	}
 	&.transparent-bg{
-		color: $blue-pop;
+		color: $violet-dark;
 		background-color: transparent;
-		border: solid 3px $blue-pop;
+		border: solid 3px $violet-dark;
 
       &:hover, &:active, &:focus{
-			background: $blue-pop;
+			background: $violet-dark;
 			color: $white;
 		}
 	}
