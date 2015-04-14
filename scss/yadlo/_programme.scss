@@ -1,7 +1,7 @@
 table tr th{
    color: $white;
    &:first-of-type{
-      border-right: dotted 3px $blue-dark;
+      border-right: dotted 3px $orange;
       border-bottom: dotted 3px $yellow;
    }
    &:last-of-type{

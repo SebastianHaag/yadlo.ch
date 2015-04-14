@@ -131,9 +131,11 @@ section{
 	height: auto;
 	}
 	&#sponsors{
-		background: $yellow;
+		background-color: $yellow;
+		background-image: url("../img/pattern.png");
+		background-repeat: repeat;
 		text-align: center;
-		padding: 60px 45px
+		padding: 60px 45px;
 	}
 
 	#map-canvas{
