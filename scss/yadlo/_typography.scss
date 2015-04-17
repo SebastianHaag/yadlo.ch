@@ -16,13 +16,18 @@
 h1, h2, h3, h4, h5, h6{
 	font-family:'arkhipregular', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	color: $headings;
-   text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $violet-dark, -4px 4px 0px $violet-dark, -5px 5px 0px $red;
    line-height: 1.8;
    font-size: 6vw;
 }
+h1{
+   text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $violet-dark, -4px 4px 0px $violet-dark, -5px 5px 0px $violet-dark, -6px 6px 0px $red;
+}
+h2, h3, h4, h5, h6{
+   text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $violet-dark, -4px 4px 0px $violet-dark, -5px 5px 0px $red;
+}
 
 p.whiteP{
-   color: $white;
+   color: $headings;
 }
 
    @media #{$landscape-small}{
