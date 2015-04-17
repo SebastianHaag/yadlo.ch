@@ -19,13 +19,13 @@
 
    /* WHITE TRANSPARENT BUTTON */
 	&.colored-bg{
-		color: $white;
+		color: $headings;
 		background-color: transparent;
-		border: solid 3px $white;
+		border: solid 3px $headings;
 
       &:hover, &:active, &:focus{
-			background: $white;
-			color: $violet-dark;
+			background: $headings;
+			color: $blue-dark;
 		}
 	}
 	&.transparent-bg{

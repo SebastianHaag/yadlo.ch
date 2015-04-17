@@ -1,15 +1,15 @@
-table tr th{
-   color: $white;
-   &:first-of-type{
-      border-right: dotted 3px $orange;
-      border-bottom: dotted 3px $yellow;
-   }
-   &:last-of-type{
-      border-bottom: solid 3px $yellow;
-   }
-}
-
 table{
    padding: 15px;
    background: rgba(0,0,0,0.3);
+
+   tr th{
+      color: $white;
+      &:first-of-type{
+         border-right: dotted 3px $orange;
+         border-bottom: dotted 3px $yellow;
+      }
+      &:last-of-type{
+         border-bottom: solid 3px $yellow;
+      }
+   }
 }

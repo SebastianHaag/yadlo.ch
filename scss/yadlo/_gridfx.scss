@@ -104,7 +104,7 @@ figure.effect-julia figcaption {
 }
 
 figure.effect-julia h6 {
-	color: $white;
+	color: $headings;
 	text-align: center;
 	position: relative;
 	padding: 1.5em 0 1em 0;
@@ -117,7 +117,7 @@ figure.effect-julia p {
 	display: inline-block;
 	margin: 0 0 0.4em;
 	padding: 0.2em 0.8em;
-	background: rgba(255,255,255,0.8);
+	background: rgba(255,248,201,0.8);
 	color: $oil;
 	text-transform: none;
 	font-weight: 500;
@@ -138,7 +138,7 @@ figure.effect-julia p {
 		opacity: 0;
 	}
 	figure.effect-julia h6 {
-		color: $white;
+		color: $headings;
 		padding: 1.5em 0;
 		margin-bottom: 20px;
 
