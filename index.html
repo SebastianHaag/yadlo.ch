@@ -58,7 +58,7 @@
          </div>
          <div id="sports" class="row">
             <div class="small-12 columns">
-               <h1 class="text-center"> WINDSURF <br class="hide-for-large-up"> ~ <br class="hide-for-large-up"> STAND UP PADDLE <br class="hide-for-large-up"> ~ <br class="hide-for-large-up"> WAKE </h1>
+               <a class="scrollDown" data-slide="1"><h1 class="text-center"> WINDSURF <br class="hide-for-large-up"> ~ <br class="hide-for-large-up"> STAND UP PADDLE <br class="hide-for-large-up"> ~ <br class="hide-for-large-up"> WAKE </h1></a>
             </div>
          </div>
       </div>
@@ -66,20 +66,20 @@
          <div id="waterImg">
             <div id="infos" class="row show-for-large-up">
                <div class="small-12 small-text-center columns">
-                  <h3>BBQ ~ INITIATIONS  ~ DJs</h3>
+                  <a class="scrollDown" data-slide="1"><h3>BBQ ~ INITIATIONS  ~ DJs</h3></a>
                </div>
             </div>
          </div>
       </div>
-      <!-- <div class="scroll-button-container">
+      <div class="scroll-button-container">
          <div class="row">
             <div class="small-12 text-center columns">
-               <div class="scroll-button" data-slide="1" title=""></div>
+               <div class="scroll-button" data-slide="1" title="Scroll down!"></div>
             </div>
          </div>
-      </div> -->
+      </div>
    </header>
-   <section id="programme" class="slide" data-slide="1">
+   <!-- <section id="programme" class="slide" data-slide="1">
       <div class="row collapse fullWidth">
          <div id="jeudi" class="small-12 medium-6 columns square">
             <figure class="effect-julia">
@@ -192,8 +192,8 @@
             <a class="close-reveal-modal" aria-label="Close">&#10005;</a>
          </div>
       </div>
-   </section>
-   <section id="pratique">
+   </section> -->
+   <section id="pratique" class="slide" data-slide="1">
 
          <div id="map-canvas"></div>
          <div id="save-widget">
@@ -237,22 +237,28 @@
 
       slide = $('.slide');
       button = $('.scroll-button');
+      scrollDown = $('.scrollDown');
       htmlbody = $('html,body');
       function goToByScroll(dataslide) {
          if(dataslide == 1)
          {
             htmlbody.animate({
                scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top-$('.top-bar').height()
-            }, 1500, 'easeInOutSine');
+            }, 1000, 'easeInOutSine');
          }
          else
          {
             htmlbody.animate({
                scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top-$('.top-bar').height()
-            }, 1500, 'easeInOutSine');
+            }, 1000, 'easeInOutSine');
          }
       }
       button.click(function (e) {
+         e.preventDefault();
+         dataslide = $(this).attr('data-slide');
+         goToByScroll(dataslide);
+      });
+      scrollDown.click(function (e) {
          e.preventDefault();
          dataslide = $(this).attr('data-slide');
          goToByScroll(dataslide);
