@@ -1,14 +1,14 @@
 /** CUSTOM FONT - FILES ROOT/FONT **/
 @font-face {
-    font-family: 'arkhipregular';
-    src: url('../font/Arkhip_font-webfont.eot');
-    src: url('../font/Arkhip_font-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/Arkhip_font-webfont.woff2') format('woff2'),
-         url('../font/Arkhip_font-webfont.woff') format('woff'),
-         url('../font/Arkhip_font-webfont.ttf') format('truetype'),
-         url('../font/Arkhip_font-webfont.svg#arkhipregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+   font-family: 'arkhipregular';
+   src: url('../font/Arkhip_font-webfont.eot');
+   src: url('../font/Arkhip_font-webfont.eot?#iefix') format('embedded-opentype'),
+   url('../font/Arkhip_font-webfont.woff2') format('woff2'),
+   url('../font/Arkhip_font-webfont.woff') format('woff'),
+   url('../font/Arkhip_font-webfont.ttf') format('truetype'),
+   url('../font/Arkhip_font-webfont.svg#arkhipregular') format('svg');
+   font-weight: normal;
+   font-style: normal;
 
 }
 
@@ -16,28 +16,36 @@
 h1, h2, h3, h4, h5, h6{
 	font-family:'arkhipregular', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	color: $headings;
-   text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $violet-dark, -4px 4px 0px $violet-dark, -5px 5px 0px $red;
    line-height: 1.8;
    font-size: 6vw;
 }
-
-p.whiteP{
-   color: $white;
+h1{
+   text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $violet-dark, -4px 4px 0px $violet-dark, -5px 5px 0px $violet-dark, -6px 6px 0px $red;
+}
+h2, h3, h4, h5, h6{
+   text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $violet-dark, -4px 4px 0px $violet-dark, -5px 5px 0px $red;
 }
 
-   @media #{$landscape-small}{
-      h1, h2, h3, h4, h5, h6{
-         line-height: 1.4;
-         font-size: 5.5vw;
-      }
-   }
+p.lightP{
+   color: $headings;
+}
+p.darkP{
+   color: $violet-dark;
+}
 
-   @media #{$landscape-medium}{
-      h1, h2, h3, h4, h5, h6{
-         line-height: 1.4;
-         font-size: 5.5vw;
-      }
+@media #{$landscape-small}{
+   h1, h2, h3, h4, h5, h6{
+      line-height: 1.4;
+      font-size: 5.5vw;
    }
+}
+
+@media #{$landscape-medium}{
+   h1, h2, h3, h4, h5, h6{
+      line-height: 1.4;
+      font-size: 5.5vw;
+   }
+}
 
 
 

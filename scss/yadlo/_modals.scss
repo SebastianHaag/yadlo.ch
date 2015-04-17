@@ -43,10 +43,15 @@ html.modal-open {
 		overflow-y: scroll;
 		height: 100%;
 		padding: 60px 0;
+      .badges img{
+         opacity: 0.9;
+         padding: 15px;
+      }
 	}
 
 	a.close-reveal-modal {
-      color: $white;
+      color: $headings;
+      text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $red;
 		top: 1.3rem;
 		right: 1.7rem;
 		font-size: 3rem;

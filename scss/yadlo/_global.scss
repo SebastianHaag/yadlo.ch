@@ -52,13 +52,21 @@ header{
 	background: linear-gradient(to bottom,  #52c1bc 0%,#a5d7bf 23%,#ffffff 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52c1bc', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
 
-	h1, h3{
+	h1{
 		transition: all 300ms ease-in-out;
 		&:hover{
 			position: relative;
-			text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $violet-dark, -4px 4px 0px $violet-dark, -5px 5px 0px $violet-dark, -6px 6px 0px $violet-dark, -7px 7px 0px $violet-dark, -8px 8px 0px $violet-dark, -9px 9px 0px $violet-dark, -10px 10px 0px $red;
+			text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $violet-dark, -4px 4px 0px $violet-dark, -5px 5px 0px $violet-dark, -6px 6px 0px $violet-dark, -7px 7px 0px $violet-dark, -8px 8px 0px $violet-dark, -9px 9px 0px $violet-dark, -10px 10px 0px $violet-dark, -11px 11px 0px $red, -12px 12px 0px $red;
 		}
 	}
+	h3{
+		transition: all 300ms ease-in-out;
+		&:hover{
+			position: relative;
+			text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $violet-dark, -4px 4px 0px $violet-dark, -5px 5px 0px $violet-dark, -6px 6px 0px $violet-dark, -7px 7px 0px $violet-dark, -8px 8px 0px $violet-dark, -9px 9px 0px $red, -10px 10px 0px $red;
+		}
+	}
+
 
 	.splitHeight{
 		#logo{

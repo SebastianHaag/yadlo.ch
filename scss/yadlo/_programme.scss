@@ -3,13 +3,13 @@ table{
    background: rgba(0,0,0,0.3);
 
    tr th{
-      color: $white;
+      color: $headings;
       &:first-of-type{
-         border-right: dotted 3px $orange;
-         border-bottom: dotted 3px $yellow;
+         border-right: dotted 3px $violet-dark;
+         border-bottom: dotted 3px $red;
       }
       &:last-of-type{
-         border-bottom: solid 3px $yellow;
+         border-bottom: solid 3px $red;
       }
    }
 }
