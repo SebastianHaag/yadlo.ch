@@ -21,6 +21,20 @@ h1, h2, h3, h4, h5, h6{
 }
 h1{
    text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $violet-dark, -4px 4px 0px $violet-dark, -5px 5px 0px $violet-dark, -6px 6px 0px $red;
+/*
+	text-shadow: 	0px 1px 0px $violet-dark, 
+					-1px 2px 0px $violet-dark, 
+					-2px 3px 0px $violet-dark, 
+					-3px 4px 0px $violet-dark, 
+					-4px 5px 0px $violet-dark, 
+					-5px 6px 0px $violet-dark, 
+					0px -1px 0px $red, 
+					1px -2px 0px $red, 
+					2px -3px 0px $red, 
+					3px -4px 0px $red, 
+					4px -5px 0px $red, 
+					5px -6px 0px $red;
+*/
 }
 h2, h3, h4, h5, h6{
    text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $violet-dark, -4px 4px 0px $violet-dark, -5px 5px 0px $red;
