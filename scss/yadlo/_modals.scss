@@ -51,10 +51,18 @@ html.modal-open {
 
 	a.close-reveal-modal {
       color: $headings;
-      text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $red;
+      text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $violet-dark, -4px 4px 0px $red;
 		top: 1.3rem;
 		right: 1.7rem;
 		font-size: 3rem;
+      transition: all 300ms ease-in-out;
+		-webkit-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+		-o-transition: all 300ms ease-in-out;
+		-ms-transition: all 300ms ease-in-out;
+      &:hover{
+			text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $violet-dark, -4px 4px 0px $violet-dark, -5px 5px 0px $violet-dark, -6px 6px 0px $violet-dark, -7px 7px 0px $violet-dark, -8px 8px 0px $violet-dark, -9px 9px 0px $red, -10px 10px 0px $red;
+		}
 	}
 	p{
 		margin-top: 15px;

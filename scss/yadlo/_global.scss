@@ -127,7 +127,8 @@ header{
 		background-color: rgba(59,59,139,0.8);
 		.top-sponsors{
 			a img{
-				height: 60px;
+				max-height: 60px;
+				width: auto;
 				padding: 10px;
 			}
 		}
