@@ -3,22 +3,23 @@ html.modal-open {
 }
 .reveal-modal-bg {
 	background: transparent;
+   background-image: url("../img/modalBgL.png");
 }
 
-#jeudiFull.reveal-modal.full.open{
-   background-image: url("../img/jeudiBgH.png");
-}
-#vendrediFull.reveal-modal.full.open{
-   background-image: url("../img/vendrediBgH.png");
-
-}
-#samediFull.reveal-modal.full.open{
-   background-image: url("../img/samediBgH.png");
-
-}
-#dimancheFull.reveal-modal.full.open{
-   background-image: url("../img/dimancheBgH.png");
-}
+// #jeudiFull.reveal-modal.full.open{
+//    background-image: url("../img/jeudiBgH.png");
+// }
+// #vendrediFull.reveal-modal.full.open{
+//    background-image: url("../img/vendrediBgH.png");
+//
+// }
+// #samediFull.reveal-modal.full.open{
+//    background-image: url("../img/samediBgH.png");
+//
+// }
+// #dimancheFull.reveal-modal.full.open{
+//    background-image: url("../img/dimancheBgH.png");
+// }
 .reveal-modal{
    z-index: 99999;
    position: fixed;
@@ -46,6 +47,8 @@ html.modal-open {
       .badges img{
          opacity: 0.9;
          padding: 15px;
+         width: 200px;
+         height: auto;
       }
 	}
 

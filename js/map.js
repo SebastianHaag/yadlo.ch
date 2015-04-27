@@ -41,7 +41,7 @@ function initialize() {
          "elementType": "geometry",
          "stylers": [
             {
-               "color": "#24245d"
+               "color": "#00a5d9"
             }
          ]
       },
@@ -188,10 +188,10 @@ function initialize() {
          "elementType": "geometry",
          "stylers": [
             {
-               "lightness": 30
+               "lightness": 0
             },
             {
-               "saturation": 30
+               "saturation": 0
             }
          ]
       },
@@ -200,7 +200,7 @@ function initialize() {
          "elementType": "geometry.fill",
          "stylers": [
             {
-               "color": "#39ade0"
+               "color": "#e25894"
             }
          ]
       },
