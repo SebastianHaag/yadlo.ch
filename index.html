@@ -75,8 +75,14 @@
       </div>
       <div class="scroll-button-container">
          <div class="row">
-            <div class="small-12 text-center columns">
+            <div class="small-4 text-center columns top-sponsors">
+               <a><img src="img/sponsors/morand-small.png"></a>
+            </div>
+            <div class="small-4 text-center columns top-sponsors">
                <div class="scroll-button" data-slide="1" title="Scroll down!"></div>
+            </div>
+            <div class="small-4 text-center columns top-sponsors">
+               <a><img src="img/sponsors/morand-small.png"></a>
             </div>
          </div>
       </div>
@@ -227,7 +233,7 @@
             </div>
             <a class="close-reveal-modal" aria-label="Close">&#10005;</a>
          </div>
-         <div id="dimanche" class="small-12 medium-5 columns square">
+         <div id="dimanche" class="small-12 medium-6 columns square">
             <figure class="effect-julia">
                <img src="img/dimancheS.png" alt="test img"/>
                <figcaption>
@@ -311,6 +317,15 @@
          }
          else {
             $('img#yadloSticker, div.scroll-button').css('opacity',1-scrollTop/300);
+         }
+         if (scrollTop > 1800) {
+            $('.scroll-button-container').css('opacity',0);
+         }
+         if (scrollTop < 1800) {
+            $('.scroll-button-container').css('opacity',1);
+         }
+         else {
+            $('.scroll-button-container').css('opacity',1-scrollTop/2300);
          }
       }).scroll();
    }(jQuery));
