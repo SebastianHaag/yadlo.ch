@@ -398,10 +398,10 @@
             $('img#yadloSticker, div.scroll-button').css('opacity',1-scrollTop/300);
          }
          if (scrollTop > 750) {
-            $('.scroll-button-container').css('opacity',0);
+            $('.scroll-button-container').css('opacity',0).css('display','none');
          }
          else {
-            $('.scroll-button-container').css('opacity',1-scrollTop/750);
+            $('.scroll-button-container').css('display','block').css('opacity',1-scrollTop/750);
          }
       }).scroll();
    }(jQuery));
