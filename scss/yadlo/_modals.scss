@@ -74,18 +74,7 @@ html.modal-open {
 
 
 @media #{$portrait}{
-   #jeudiFull.reveal-modal.full.open{
-      background-image: url("../img/jeudiBgP.png");
-   }
-   #vendrediFull.reveal-modal.full.open{
-      background-image: url("../img/vendrediBgP.png");
-
-   }
-   #samediFull.reveal-modal.full.open{
-      background-image: url("../img/samediBgP.png");
-
-   }
-   #dimancheFull.reveal-modal.full.open{
-      background-image: url("../img/dimancheBgP.png");
+   .reveal-modal.full.open{
+      background-image: url("../img/modalBgP.png");
    }
 }
