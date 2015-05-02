@@ -146,41 +146,48 @@ header{
 
 section{
 	width: 100%;
-	height: 100%;
 	display: block;
 
 	&#programme{
 	height: auto;
+	}
+
+	&#pratique{
+		height: 150%;
+		#map-canvas{
+			width: 100%;
+			height: 100%;
+			img{
+				max-width : none;
+			}
+		}
+		#save-widget {
+			width: 100%;
+			background-color: rgba(0,165,217,0.7);
+			box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
+			padding: 15px;
+			h6, p{
+				color: $headings;
+			}
+			iframe.gm-save-widget{
+				display: none;
+			}
+		}
 	}
 	&#sponsors{
 		background-color: $teal;
 		background-repeat: repeat;
 		text-align: center;
 		padding: 60px 45px;
-	}
-
-	#map-canvas{
-		width: 100%;
-		height: 133%;
-		img{
-			max-width : none;
+		h6{
+			padding-bottom: 30px;
+		}
+		a img{
+			padding: 0px 10px 30px 10px;
+			max-height: 260px;
+			opacity: 1;
 		}
 	}
-
-	#save-widget {
-		width: 100%;
-		height: auto;
-		background-color: rgba(0,165,217,0.7);
-		box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
-		padding: 15px;
-		h6, p{
-			color: $headings;
-		}
-		iframe.gm-save-widget{
-			display: none;
-		}
-	}
-
 }
 
 footer{
@@ -190,14 +197,17 @@ footer{
 }
 
 @media #{$medium-up}{
-	div#save-widget {
-		padding: 60px 45px 45px 45px;
-		width: 50%;
-		height: 100%;
-	}
 	section{
-		#map-canvas{
+		&#pratique{
 			height: 100%;
+			#map-canvas{
+				height: 100%;
+			}
+			#save-widget {
+				padding: 60px 45px 45px 45px;
+				width: 50%;
+				height: 100%;
+			}
 		}
 	}
 }
@@ -218,8 +228,18 @@ footer{
 			}
 		}
 	}
-	section#pratique{
-		background-attachment: fixed;
+	section{
+		&#pratique{
+			background-attachment: fixed;
+		}
+		&#sponsors{
+			h6{
+				padding-bottom: 45px;
+			}
+			a img{
+				padding: 0px 10px 45px 10px;
+			}
+		}
 	}
 }
 

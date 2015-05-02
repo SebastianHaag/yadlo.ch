@@ -81,31 +81,6 @@ figure p {
 
 /* Individual effects */
 
-#jeudi figure.effect-julia{
-	border-top: solid 10px $blue-pop;
-	border-right: solid 5px $blue-pop;
-	border-bottom: solid 5px $blue-pop;
-	border-left: solid 10px $blue-pop;
-}
-#vendredi figure.effect-julia{
-	border-top: solid 10px $blue-pop;
-	border-right: solid 10px $blue-pop;
-	border-bottom: solid 5px $blue-pop;
-	border-left: solid 5px $blue-pop;
-}
-#samedi figure.effect-julia{
-	border-top: solid 5px $blue-pop;
-	border-right: solid 5px $blue-pop;
-	border-bottom: solid 10px $blue-pop;
-	border-left: solid 10px $blue-pop;
-}
-#dimanche figure.effect-julia{
-	border-top: solid 5px $blue-pop;
-	border-right: solid 10px $blue-pop;
-	border-bottom: solid 10px $blue-pop;
-	border-left: solid 5px $blue-pop;
-}
-
 /*---------------*/
 /***** Julia *****/
 /*---------------*/
@@ -150,6 +125,31 @@ figure.effect-julia p {
 	text-transform: uppercase;
 }
 @media #{$medium-up}{
+	#jeudi figure.effect-julia{
+		border-top: solid 10px $blue-pop;
+		border-right: solid 5px $blue-pop;
+		border-bottom: solid 5px $blue-pop;
+		border-left: solid 10px $blue-pop;
+	}
+	#vendredi figure.effect-julia{
+		border-top: solid 10px $blue-pop;
+		border-right: solid 10px $blue-pop;
+		border-bottom: solid 5px $blue-pop;
+		border-left: solid 5px $blue-pop;
+	}
+	#samedi figure.effect-julia{
+		border-top: solid 5px $blue-pop;
+		border-right: solid 5px $blue-pop;
+		border-bottom: solid 10px $blue-pop;
+		border-left: solid 10px $blue-pop;
+	}
+	#dimanche figure.effect-julia{
+		border-top: solid 5px $blue-pop;
+		border-right: solid 10px $blue-pop;
+		border-bottom: solid 10px $blue-pop;
+		border-left: solid 5px $blue-pop;
+	}
+	
 	figure.effect-julia p {
 		font-size: 1.5vw;
 	}
