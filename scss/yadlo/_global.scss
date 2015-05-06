@@ -111,10 +111,21 @@ header{
 			background: 50% 100% no-repeat;
 			background-image: url("../img/headerBgH.png");
 			opacity: 1;
+			position:relative;
 			background-size: cover;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
+			.SUP_header{
+				position: absolute;
+				height: 15.68vw;
+				width: 14.4vw;
+				left: 0;
+				bottom: -13vh;
+				background: url("../img/SUP.png") top left no-repeat;
+				background-size: 100%;
+				z-index: 10;
+			}
 		}
 	}
 	.scroll-button-container {
