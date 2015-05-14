@@ -4,9 +4,9 @@ var adaptZoom;
 var saveWidget;
 
 function initialize() {
-   mapCenter={lat: 46.522, lng: 6.48}
+   mapCenter={lat: 46.52, lng: 6.48}
    if ( $(window).width() <= 641) {
-      mapCenter={lat: 46.5, lng: 6.5280257}
+      mapCenter={lat: 46.465, lng: 6.5280257}
    }
    var myOptions = {
       zoom: 12,

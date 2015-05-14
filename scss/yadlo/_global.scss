@@ -202,9 +202,27 @@ section{
 }
 
 footer{
+	padding: 60px 0;
 	width: 100%;
 	height: 50%;
 	background: $oil;
+	#calandar{
+		padding:10px 0 25px 0;
+	}
+	a{
+		color: $headings;
+		transition: all 300ms ease-in-out;
+		-webkit-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+		-o-transition: all 300ms ease-in-out;
+		-ms-transition: all 300ms ease-in-out;
+		&:hover{
+			color: $teal;
+		}
+		&:visited{
+			color: $headings;
+		}
+	}
 }
 
 @media #{$medium-up}{
@@ -242,10 +260,13 @@ footer{
 	section{
 		&#pratique{
 			background-attachment: fixed;
+			#save-widget {
+				padding: 75px 45px 45px 45px;
+			}
 		}
 		&#sponsors{
 			h6{
-				padding-bottom: 45px;
+				padding: 75px 0;
 			}
 			a img{
 				padding: 0px 10px 45px 10px;
