@@ -1,4 +1,7 @@
 $(document).ready(function() {
+   $(window).load(function() {
+      $("#preload").fadeOut(800);
+   });
    $(document).foundation({
       reveal: {
          animation: 'fade',

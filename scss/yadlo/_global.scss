@@ -1,17 +1,38 @@
 /** CUSTOM CLASS **/
 
+#preload{
+	position: absolute;
+   top:0px;
+   left: 0;
+   z-index: 99999999;
+   height: 1000%;
+   width: 100%;
+   overflow: hidden;
+	background: #52c1bc; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzUyYzFiYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2E1ZDdiZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #52c1bc 0%, #a5d7bf 23%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#52c1bc), color-stop(23%,#a5d7bf), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #52c1bc 0%,#a5d7bf 23%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #52c1bc 0%,#a5d7bf 23%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #52c1bc 0%,#a5d7bf 23%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #52c1bc 0%,#a5d7bf 23%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52c1bc', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+
+}
+
 .fullWidth{
 	max-width: 100% !important;
 }
 
-	.splitHeight{
-		&.smallTop{
-			height: 25%;
-		}
-		&.smallBtm{
-			height: 75%;
-		}
+.splitHeight{
+	&.smallTop{
+		height: 25%;
 	}
+	&.smallBtm{
+		height: 75%;
+	}
+}
 
 @media #{$portrait}{
 	.splitHeight{
@@ -87,11 +108,6 @@ header{
 			img{
 				width: 40vh;
 				display: inline-block;
-				-webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-				-moz-animation: fadein 4s; /* Firefox < 16 */
-				-ms-animation: fadein 4s; /* Internet Explorer */
-				-o-animation: fadein 4s; /* Opera < 12.1 */
-				animation: fadein 4s;
 			}
 		}
 		#sports{
@@ -155,7 +171,7 @@ section{
 	display: block;
 
 	&#programme{
-	height: auto;
+		height: auto;
 	}
 
 	&#pratique{
@@ -175,6 +191,32 @@ section{
 			h6, p{
 				color: $headings;
 			}
+			#uber{
+				width: 100%;
+				border: solid $headings 3px;
+				margin: 15px 0 45px 0;
+				a{
+					display: block;
+					img{
+						padding: 15px;
+						max-width: 60%;
+						margin: 0 auto;
+						display: block;
+					}
+				}
+				h4{
+					text-shadow: none;
+					padding: 0 15px;
+					text-align: center;
+					font-size: 18px;
+				}
+				h5{
+					text-shadow: none;
+					padding: 0 15px;
+					text-align: center;
+					font-size: 20px;
+				}
+			}
 			iframe.gm-save-widget{
 				display: none;
 			}
@@ -192,6 +234,9 @@ section{
 			padding: 0px 10px 30px 10px;
 			max-height: 260px;
 			opacity: 1;
+			&.smallIMG{
+				padding: 30px;
+			}
 		}
 	}
 }
@@ -230,6 +275,14 @@ footer{
 				padding: 60px 45px 45px 45px;
 				width: 50%;
 				height: 100%;
+				#uber{
+					padding: 15px;
+				}
+			}
+		}
+		&#sponsors{
+			a img.smallIMG{
+				padding: 50px;
 			}
 		}
 	}
@@ -264,6 +317,9 @@ footer{
 			}
 			a img{
 				padding: 0px 10px 45px 10px;
+				&.smallIMG{
+					padding: 30px;
+				}
 			}
 		}
 	}
@@ -277,6 +333,13 @@ footer{
 				img{
 					width: 540px;
 				}
+			}
+		}
+	}
+	section{
+		&#sponsors{
+			a img.smallIMG{
+				padding: 50px;
 			}
 		}
 	}

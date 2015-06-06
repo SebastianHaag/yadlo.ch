@@ -47,6 +47,7 @@
 
 </head>
 <body>
+   <div id="preload"></div>
    <header>
       <div class="hide row">
          <div class="small-12 text-center columns">
@@ -91,7 +92,7 @@
          </div>
       </div>
    </header>
-   <!-- <section id="programme" class="slide" data-slide="1">
+   <section id="programme" class="slide" data-slide="1">
       <div class="row collapse fullWidth">
          <div id="jeudi" class="small-12 medium-6 columns square">
             <figure class="effect-julia">
@@ -298,17 +299,20 @@
             <a class="close-reveal-modal" aria-label="Close">&#10005;</a>
          </div>
       </div>
-   </section> -->
+   </section>
    <section id="pratique" class="slide" data-slide="1">
 
       <div id="map-canvas"></div>
       <div id="save-widget">
-         <h6>YADLO'15</h6><br>
+         <h6>PRATIQUE</h6><br>
          <p>Yadlo, connue dans le passé sous le nom de Surf Shop Party, aura lieu à la plage de Préverenges du 9 au 12 juillet 2015.</p>
-         <p>Evénement rafraîchissant de l'été, prépare toi à profiter des plaisirs du lac: sports sur l'eau, bohneur dans ton verre, douceur pour tes papilles, musique chill dans tes oreilles et soleil dans ton coeur. On te prépare un programme à ne pas rater!</p>
-         <p>En quelques mots, réserve ces dates pour rejoindre notre univers: mouille ton corps, arrose ton esprit!</p><br>
-         <!-- <p>Les places de parc sont limitée, privilègiez les transports en communs (Ligne de bus 701 des TPM depuis Morges ou la Bourdonette) ou le vélo!</p> -->
+         <p>Les places de parc sont limitées, privilègie les transports en communs (Ligne de bus 701 des TPM depuis Morges ou la Bourdonette) ou le vélo!</p>
          <a class="button colored-bg" href="https://maps.google.com/maps?directionsmode=driving&dirflg=d&daddr=Surf+Shop,+Avenue+de+la+Plage+1,+1028+Préverenges,+Switzerland" target="_blank">VOIR DANS GOOGLE MAP</a>
+         <div id="uber">
+            <a href="https://www.uber.com/fr/" target="_blank"><img src="img/sponsors/autre/uber.png"></a>
+            <h4>Profites de 20.- offert sur ta première course!</h4>
+            <h5>CODE: YADLO15</h5>
+         </div>
       </div>
 
    </section>
@@ -324,82 +328,98 @@
          </div>
       </div>
       <div class="row">
-         <div class="small-12 large-4 columns text-center">
-            <a href="http://www.morand.ch/" target="_blank"><img src="img/sponsors/morand.png"></a>
+         <div class="small-8 small-centered large-4 large-uncentered columns text-center">
+            <a href="http://www.morand.ch/" target="_blank"><img src="img/sponsors/silver/morand.png"></a>
          </div>
-         <div class="small-12 large-4 columns text-center">
-            <a href="http://www.ripcurl.eu/eu/en/" target="_blank"><img src="img/sponsors/ripcurl.png"></a>
+         <div class="small-8 small-centered large-4 large-uncentered columns text-center">
+            <a href="http://www.ripcurl.eu/eu/en/" target="_blank"><img src="img/sponsors/silver/ripcurl.png"></a>
          </div>
-         <div class="small-12 large-4 columns end text-center">
-            <a href="http://www.lanebuleuse.ch/" target="_blank"><img src="img/sponsors/nebuleuse.png"></a>
+         <div class="small-8 small-centered large-4 large-uncentered columns text-center">
+            <a href="http://www.lanebuleuse.ch/" target="_blank"><img src="img/sponsors/silver/nebuleuse.png"></a>
          </div>
-      </div>
-      <div class="row">
-         <div class="small-6 medium-4 large-3 columns text-center">
-            <a href="https://www.romande-energie.ch/" target="_blank"><img src="img/sponsors/romande-energie.png"></a>
+         <div class="small-6 medium-4 medium-offset-2 columns text-center">
+            <a href="http://www.qsport.ch" target="_blank"><img src="img/sponsors/silver/qsport.png"></a>
          </div>
-         <div class="small-6 medium-4 large-3 columns text-center">
-            <a href="http://www.wiznoo.ch/preverenges/boulangerie-patisserie-deriaz-sa#n0=page&n1=vitrine&n2=view&n3=22664&r0" target="_blank"><img src="img/sponsors/deriaz.png"></a>
-         </div>
-         <div class="small-6 medium-4 large-3 columns text-center">
-            <a href="http://www.cefco.ch/accueil.php" target="_blank"><img src="img/sponsors/cefco.png"></a>
-         </div>
-         <div class="small-6 medium-4 large-3 columns text-center">
-            <a href="http://imajack.com/" target="_blank"><img src="img/sponsors/imajack.png"></a>
+         <div class="small-6 medium-4 columns text-center end">
+            <a href="http://imajack.com/" target="_blank"><img src="img/sponsors/silver/imajack.png"></a>
          </div>
       </div>
       <div class="row">
+         <div class="small-6 medium-4 columns text-center">
+            <a href="https://www.romande-energie.ch/" target="_blank"><img src="img/sponsors/silver/romande-energie.png"></a>
+         </div>
+         <div class="small-6 medium-4 columns text-center">
+            <a href="http://www.wiznoo.ch/preverenges/boulangerie-patisserie-deriaz-sa#n0=page&n1=vitrine&n2=view&n3=22664&r0" target="_blank"><img src="img/sponsors/silver/deriaz.png"></a>
+         </div>
+         <div class="small-6 medium-4 columns text-center">
+            <a href="http://www.cefco.ch/accueil.php" target="_blank"><img src="img/sponsors/silver/cefco.png"></a>
+         </div>
+         <div class="small-6 medium-4 columns text-center">
+            <a href="http://www.mobi.ch" target="_blank"><img src="img/sponsors/silver/mobiliere.png"></a>
+         </div>
+         <div class="small-6 medium-4 columns text-center">
+            <a href="http://imajack.com/" target="_blank"><img src="img/sponsors/silver/extreme.png"></a>
+         </div>
+         <div class="small-6 medium-4 columns text-center">
+            <a href="http://www.thegreenvan.ch/" target="_blank"><img src="img/sponsors/bronze/greenvan.png"></a>
+         </div>
+      </div>
+      <div class="row">
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="http://www.surfrider.eu/" target="_blank"><img src="img/sponsors/surfrider.png"></a>
+            <a href="http://www.uber.com/fr/" target="_blank"><img class="smallIMG" src="img/sponsors/bronze/aligro.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="https://www.uber.com/fr/" target="_blank"><img src="img/sponsors/uber.png"></a>
+            <a href="http://www.etoile-preverenges.ch/" target="_blank"><img class="smallIMG" src="img/sponsors/bronze/auberge-etoile.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="http://www.audiolight.ch/" target="_blank"><img src="img/sponsors/AudioLight.png"></a>
+            <a href="http://www.audiolight.ch/" target="_blank"><img class="smallIMG" src="img/sponsors/bronze/audiolight.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="http://www.thegreenvan.ch/" target="_blank"><img src="img/sponsors/greenvan.png"></a>
+            <a href="http://www.domaine-du-paradis.ch/" target="_blank"><img class="smallIMG" src="img/sponsors/bronze/paradis.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="https://www.mobi.ch/" target="_blank"><img src="img/sponsors/lamobiliere.png"></a>
+            <a href="http://eu.dakine.com/" target="_blank"><img class="smallIMG" src="img/sponsors/bronze/dakine.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="http://www.domaine-du-paradis.ch/" target="_blank"><img src="img/sponsors/domaine_paradis.png"></a>
+            <a href="http://www.lecube.ch/" target="_blank"><img class="smallIMG" src="img/sponsors/bronze/cube.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="http://surfingromandie.ch/" target="_blank"><img src="img/sponsors/ars.png"></a>
+            <a href="http://www.urbankombucha.ch/" target="_blank"><img class="smallIMG" src="img/sponsors/bronze/kombucha.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="http://eu.dakine.com/" target="_blank"><img src="img/sponsors/dakine.png"></a>
+            <a href="http://www.mb-fins.com/" target="_blank"><img class="smallIMG" src="img/sponsors/bronze/mb-fins.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="http://www.bombereyewear.eu/" target="_blank"><img src="img/sponsors/bomber.png"></a>
+            <a href="http://www.surfrider.eu/" target="_blank"><img class="smallIMG" src="img/sponsors/autre/surfrider.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="http://www.lecube.ch/" target="_blank"><img src="img/sponsors/lecube.png"></a>
+            <a href="http://surfingromandie.ch/" target="_blank"><img class="smallIMG" src="img/sponsors/autre/ars.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="http://www.fanatic.com/" target="_blank"><img src="img/sponsors/fanatic.png"></a>
+            <a href="http://www.fanatic.com/" target="_blank"><img class="smallIMG" src="img/sponsors/autre/fanatic.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="http://www.fool-moon.com/" target="_blank"><img src="img/sponsors/foolmoon.png"></a>
+            <a href="http://www.fool-moon.com/" target="_blank"><img class="smallIMG" src="img/sponsors/autre/foolmoon.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="http://www.naish.com/" target="_blank"><img src="img/sponsors/naish.png"></a>
+            <a href="http://www.ride4thecause.org/" target="_blank"><img class="smallIMG" src="img/sponsors/autre/ride-for-the-cause.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="http://redwoodpaddle.com/" target="_blank"><img src="img/sponsors/redwood.png"></a>
+            <a href="http://www.naish.com/" target="_blank"><img class="smallIMG" src="img/sponsors/autre/naish.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="https://www.north-windsurf.com/" target="_blank"><img src="img/sponsors/northsails.png"></a>
+            <a href="http://redwoodpaddle.com/" target="_blank"><img class="smallIMG" src="img/sponsors/autre/redwood.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns text-center">
-            <a href="http://skeye.ch/" target="_blank"><img src="img/sponsors/skeye.png"></a>
+            <a href="http://skeye.ch/" target="_blank"><img class="smallIMG" src="img/sponsors/autre/skeye.png"></a>
+         </div>
+         <div class="small-6 medium-4 large-2 columns text-center">
+            <a href="http://www.lairdstandup.com/" target="_blank"><img class="smallIMG" src="img/sponsors/autre/laird.png"></a>
          </div>
          <div class="small-6 medium-4 large-2 columns end text-center">
-            <a href="http://www.robertoriccidesigns.com/" target="_blank"><img src="img/sponsors/rrd.png"></a>
+            <a href="http://www.robertoriccidesigns.com/" target="_blank"><img class="smallIMG" src="img/sponsors/autre/rrd.png"></a>
          </div>
+      </div>
       </div>
    </section>
    <footer>
