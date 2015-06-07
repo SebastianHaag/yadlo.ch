@@ -2,8 +2,8 @@ table{
    tr th{
       color: $headings;
       font-family:'arkhipregular', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-      line-height: 2.2 !important;
-      font-size: rem-calc(24);
+      line-height: 2 !important;
+      font-size: rem-calc(20);
       &:first-of-type{
 	     width: 25%;
          border-right: dotted 3px $violet-dark;
@@ -12,6 +12,15 @@ table{
       &:last-of-type{
 	     width: 75%;
          border-bottom: solid 3px $red;
+      }
+   }
+}
+@media #{$medium-up}{
+   table{
+      tr th{
+         color: $headings;
+         line-height: 2.2 !important;
+         font-size: rem-calc(24);
       }
    }
 }
