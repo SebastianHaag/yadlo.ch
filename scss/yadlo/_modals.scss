@@ -4,6 +4,7 @@ html.modal-open {
 .reveal-modal-bg {
 	background: transparent;
    background-image: url("../img/modalBgL.png");
+   z-index: 99999;
 }
 
 // #jeudiFull.reveal-modal.full.open{

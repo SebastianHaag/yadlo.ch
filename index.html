@@ -100,21 +100,26 @@
                <figcaption>
                   <h6>Jeudi</h6>
                   <div>
-                     <p class="fromLeft">Petite trompette, ambiance médiévale</p><br>
-                     <p class="fromRight">Des grills chauds à dispo</p><br>
-                     <p class="fromLeft">Ca s'appelle Lance l'eau du Lac</p><br>
+                     <p class="fromLeft">Stand-Up Paddle polo</p><br>
+                     <p class="fromRight">Afterwork tranquilo</p><br>
+                     <p class="fromLeft">Grills chauds à ta dispo</p><br>
                   </div>
-                  <a href="#" data-reveal-id="jeudiFull">View more</a>
+                  <a href="#" data-reveal-id="jeudiFull"></a>
                </figcaption>
             </figure>
          </div>
          <div id="jeudiFull" class="reveal-modal full" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
-            <h2>Jeudi 09.07.15</h2>
+            <div class="row">
+               <div class="small-12 columns">
+                  <h2>Jeudi <small>09.07.15</small></h2>
+               </div>
+            </div>
             <div class="scrollable-content">
                <div class="row">
                   <div class="small-12 large-5 columns">
-                     <p class="lightP">Le jeudi, préparez-vous à vous mouiller en cote et à mailler. Châteaux forts, chevaliers en armure prêts à ramer: des joutes médiévales revisitées à l'ére du Stand-Up Paddle. Armé d'une rame à double usage, précipite-toi sur ton adversaire: tu tombes à l'eau, notre taverne te réconfortera. Tu sors victorieux, le graal sera à toi!</p>
-                     <p class="lightP">Qui dit tournoi dit festin: des braises ardentes seront prêtes à saisir à point votre cochonaille. Si toutefois tu vis déjà au temps des frigos, mais que le tien est vide: n'aie crainte sorcier, nous aurons de quoi te rassasier.</p>
+                     <p class="lightP">Après la semaine, le week-end! Et avant le week-end… une mise en condition digne de ce nom : le jeudi! Viens profiter d’un afterwork détente à la plage et t’entraîner au Stand-Up Paddle Polo pour être au taquet pour le championnat Suisse de samedi! Le SUP Polo, un sport nouveau-né qui fait déjà des vagues outre Atlantique: par équipe et munis d’une rame adaptée, passe  le ballon direction les goals adverses!</p>
+                     <p class="lightP">Qui dit sport, dit réconfort : il y aura tout ce qu’il faut pour profiter d’un afterwork des plus sympathique. Viens profiter de l’Open BBQ (non tu ne rêves pas, on te propose bien d’amener ta saucisse si tu en as envie), de nos boissons aux arômes enjôleurs, le tout sur un fond sonore de qualité laissé aux bons soin du Phoebus Creative Cartel.</p>
+                     <p class="lightP">En résumé: le jeudi, on ouvre pour le plaisir de tous et si tu comptes ne venir mouiller ton corps que le vendredi, le samedi ou le dimanche, tout sera déjà prêt pour arroser ton esprit!</p>
                   </div>
                   <div class="small-12 large-5 large-offset-1 columns">
                      <table role="grid">
@@ -123,8 +128,8 @@
                            <th>Début de Yadlo'15</th>
                         </tr>
                         <tr>
-                           <th>16h00</th>
-                           <th>Lance l'Eau Du Lac</th>
+                           <th>15h00</th>
+                           <th>SUP Polo Training</th>
                         </tr>
                         <tr>
                            <th>19h00</th>
@@ -134,9 +139,10 @@
                   </div>
                </div>
                <div class="row badges">
-                  <img src="img/badges/medieval-paddle.png">
+                  <img src="img/badges/sup-polo.png">
                   <img src="img/badges/chill.png">
                   <img src="img/badges/barbecue.png">
+                  <img src="img/badges/movies.png">
                </div>
             </div>
             <a class="close-reveal-modal" aria-label="Close">&#10005;</a>
@@ -156,7 +162,7 @@
             </figure>
          </div>
          <div id="vendrediFull" class="reveal-modal full" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
-            <h2>Vendredi 10.07.15</h2>
+            <h2>Vendredi <small>10.07.15</small></h2>
             <div class="scrollable-content">
                <div class="row">
                   <div class="small-12 large-5 columns">
@@ -166,15 +172,15 @@
                      <table role="grid">
                         <tr>
                            <th>14h00</th>
-                           <th>Début de Yadlo'15</th>
+                           <th>Ouverture</th>
                         </tr>
                         <tr>
-                           <th>16h00</th>
+                           <th>15h00</th>
                            <th>Lance l'Eau Du Lac</th>
                         </tr>
                         <tr>
-                           <th>19h00</th>
-                           <th>Open BBQ</th>
+                           <th>21h - 01h</th>
+                           <th>Silent Party</th>
                         </tr>
                      </table>
                   </div>
@@ -205,7 +211,7 @@
             </figure>
          </div>
          <div id="samediFull" class="reveal-modal full" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
-            <h2>Samedi 11.07.15</h2>
+            <h2>Samedi<small>11.07.15</small></h2>
             <div class="scrollable-content">
                <div class="row">
                   <div class="small-12 large-5 columns">
@@ -259,7 +265,7 @@
             </figure>
          </div>
          <div id="dimancheFull" class="reveal-modal full" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
-            <h2>Dimanche 12.07.15</h2>
+            <h2>Dimanche <small>12.07.15</small></h2>
             <div class="scrollable-content">
                <div class="row">
                   <div class="small-12 large-5 columns">
@@ -452,24 +458,26 @@
    <script src="js/easing.min.js"></script>
    <script src="js/map.js"></script>
    <script>
-   (function($) {
-      $("#yadloSticker, .scroll-button").next().height($("#yadloSticker, .scroll-button").height());
-      $(window).scroll(function() {
-         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-         if (scrollTop > 300) {
-            $('img#yadloSticker, div.scroll-button').css('opacity',0);
-         }
-         else {
-            $('img#yadloSticker, div.scroll-button').css('opacity',1-scrollTop/300);
-         }
-         if (scrollTop > 750) {
-            $('.scroll-button-container').css('display','none').css('opacity',0);
-         }
-         else {
-            $('.scroll-button-container').css('display','block').css('opacity',1-scrollTop/750);
-         }
-      }).scroll();
-   }(jQuery));
+   if( $(window).width() > 641 ){
+      (function($) {
+         $("#yadloSticker, .scroll-button").next().height($("#yadloSticker, .scroll-button").height());
+         $(window).scroll(function() {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > 300) {
+               $('img#yadloSticker, div.scroll-button').css('opacity',0);
+            }
+            else {
+               $('img#yadloSticker, div.scroll-button').css('opacity',1-scrollTop/300);
+            }
+            if (scrollTop > 750) {
+               $('.scroll-button-container').css('display','none').css('opacity',0);
+            }
+            else {
+               $('.scroll-button-container').css('display','block').css('opacity',1-scrollTop/750);
+            }
+         }).scroll();
+      }(jQuery));
+   }
    </script>
    <script>
    jQuery(document).ready(function ($) {

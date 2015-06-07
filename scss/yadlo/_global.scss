@@ -1,5 +1,9 @@
 /** CUSTOM CLASS **/
 
+html body{
+	background-color: $oil;
+}
+
 #preload{
 	position: absolute;
    top:0px;
@@ -135,17 +139,17 @@ header{
 				bottom: -13vh;
 				background: url("../img/SUP.png") top left no-repeat;
 				background-size: 100%;
-				z-index: 10;
+				z-index: 11;
 			}
 		}
 	}
 	.scroll-button-container {
 		left: 0;
-		bottom: -1px;
+		bottom: 60px;
 		width:100%;
-		position: fixed;
+		position: relative;
 		display:block;
-		z-index: 999999;
+		z-index: 10;
 		background-color: rgba(59,59,139,0.8);
 		.top-sponsors{
 			a img{
@@ -246,7 +250,7 @@ footer{
 	width: 100%;
 	background: $oil;
 	#calandar{
-		padding:10px 0 25px 0;
+		padding:25px 0;
 	}
 	a{
 		color: $headings;
