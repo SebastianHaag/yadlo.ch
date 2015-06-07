@@ -7,20 +7,6 @@ html.modal-open {
    z-index: 99999;
 }
 
-// #jeudiFull.reveal-modal.full.open{
-//    background-image: url("../img/jeudiBgH.png");
-// }
-// #vendrediFull.reveal-modal.full.open{
-//    background-image: url("../img/vendrediBgH.png");
-//
-// }
-// #samediFull.reveal-modal.full.open{
-//    background-image: url("../img/samediBgH.png");
-//
-// }
-// #dimancheFull.reveal-modal.full.open{
-//    background-image: url("../img/dimancheBgH.png");
-// }
 .reveal-modal{
    z-index: 99999;
    position: fixed;
@@ -50,6 +36,8 @@ html.modal-open {
          padding: 15px;
          width: 200px;
          height: auto;
+         margin: 0 auto;
+         display: block;
       }
 	}
 
@@ -77,5 +65,15 @@ html.modal-open {
 @media #{$portrait}{
    .reveal-modal.full.open{
       background-image: url("../img/modalBgP.png");
+   }
+}
+@media #{$medium-up}{
+   .reveal-modal{
+      .scrollable-content{
+         .badges img{
+            margin: initial;
+            display: initial;
+         }
+   	}
    }
 }
