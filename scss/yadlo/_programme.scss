@@ -5,10 +5,12 @@ table{
       line-height: 2.2 !important;
       font-size: rem-calc(24);
       &:first-of-type{
+	     width: 25%;
          border-right: dotted 3px $violet-dark;
          border-bottom: dotted 3px $red;
       }
       &:last-of-type{
+	     width: 75%;
          border-bottom: solid 3px $red;
       }
    }
