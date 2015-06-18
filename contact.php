@@ -18,7 +18,9 @@ $address = "sebastian@yadlo.ch";
 
 
 $email    = $_POST['email'];
-$name     = $_POST['name'];
+$firstname     = $_POST['firstname'];
+$lastname     = $_POST['lastname'];
+$age    = $_POST['age'];
 $phone    = $_POST['phone'];
 $remarks = $_POST['remarks'];
 
@@ -46,14 +48,14 @@ if($error != '') {
 
    // Configuration de l'email re�u
 
-   $e_subject = 'You\'ve been contacted by ' . $name . '.';
+   $e_subject = 'You\'ve been contacted by ' . $firstname . '.';
 
    // Advanced Configuration Option.
    // You can change this if you feel that you need to.
    // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
-   $msg = "You have been contacted by $name from www.yadlo.ch.\r\n\n";
+   $msg = "$firstname $lastname, $age ans, s'est inscrit à Lance L'eau du Lac.\r\n\n";
    $msg .= "$remarks\r\n\n";
-   $msg .= "You can contact $name: $email or $phone.\r\n\n";
+   $msg .= "Tu peux contacter $firstname $lastname: $email ou $phone.\r\n\n";
 
 
 
@@ -63,7 +65,7 @@ if($error != '') {
       echo "<fieldset>";
       echo "<div id='success_page'>";
       echo "<p>Ton inscription a bien été envoyée</p>";
-      echo "<p>Merci <strong>$name</strong>, nous te recontactons prochainement</p>";
+      echo "<p>Merci <strong>$firstname</strong>, nous te recontactons prochainement!</p>";
       echo "</div>";
       echo "</fieldset>";
 

@@ -99,8 +99,6 @@ header{
 			text-shadow: -1px 1px 0px $violet-dark, -2px 2px 0px $violet-dark, -3px 3px 0px $violet-dark, -4px 4px 0px $violet-dark, -5px 5px 0px $violet-dark, -6px 6px 0px $violet-dark, -7px 7px 0px $violet-dark, -8px 8px 0px $violet-dark, -9px 9px 0px $red, -10px 10px 0px $red;
 		}
 	}
-
-
 	.splitHeight{
 		#logo{
 			position: absolute;
@@ -177,7 +175,7 @@ header{
 		height: 100%;
 		background-color: rgba(0,165,217,0.8);
 		h2{
-			margin-top: 10vw;
+			margin-top: 100px;
 		}
 	}
 }
@@ -277,6 +275,26 @@ footer{
 		&:visited{
 			color: $headings;
 		}
+	}
+}
+
+/** INSCRIPTIONS **/
+#formulaire{
+	padding: 30px 0;
+	height: auto;
+	min-height: 100%;
+	width: 100%;
+	background: 50% 100% no-repeat;
+	background-image: url("../img/inscriptionsBgH.png");
+	opacity: 1;
+	position:relative;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	button{
+		margin: 0 !important;
 	}
 }
 
